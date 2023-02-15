@@ -52,9 +52,9 @@
 			</div>
 
 			<div class="tab" align="center">
-				<button class="tablinks" onclick="openTab(event, 'Highlights')" id="defaultOpen">Highlights</button> &nbsp &nbsp &nbsp
-				<button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button> &nbsp &nbsp &nbsp
-				<button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+				<button class="button" onclick="openTab(event, 'Highlights')" id="defaultOpen">Highlights</button> &nbsp &nbsp &nbsp
+				<button class="button" onclick="openTab(event, 'Publications')">Publications</button> &nbsp &nbsp &nbsp
+				<button class="button" onclick="openTab(event, 'Resume')">Resume</button>
 			</div>
 
 			<br><br>
@@ -662,7 +662,7 @@
 				  for (i = 0; i < tabcontent.length; i++) {
 					tabcontent[i].style.display = "none";
 				  }
-				  tablinks = document.getElementsByClassName("tablinks");
+				  tablinks = document.getElementsByClassName("button");
 				  for (i = 0; i < tablinks.length; i++) {
 					tablinks[i].className = tablinks[i].className.replace(" active", "");
 				  }
