@@ -16,6 +16,22 @@ body {
 }
 */
 
+.shape {
+	height: 100%;
+	width: 100%;
+	background-color: 	#dcebfb;
+
+	margin-bottom: 30px;
+	float: left;
+	margin-right: 20px;
+  }
+  
+  .shape2 {
+	border-top-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+  }
+
+  
 
 body { 
   font-family: Georgia, serif;
@@ -111,7 +127,7 @@ div.menu-item {
 
 div#toptitle {
 	padding-bottom: 0.2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 0.4em;
 	/*border-bottom: 3px double gray;*/
 }
 
@@ -137,13 +153,13 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #103775;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 2px solid #20357b;
 }
 
 h1 {
@@ -234,6 +250,8 @@ p + ul, p + ol {
 
 li {
 	margin-top:0.9em;
+	text-align:justify;
+	width: 98%;
 }
 
 ol {
@@ -387,7 +405,7 @@ img.eqwl {
 
 img.rounded {
 	object-fit: cover;
-	border-radius: 45%;
+	border-radius: 50%;
 	height: 200px;
 	width: 200px;
   }
