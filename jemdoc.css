@@ -36,7 +36,7 @@ body {
 	cursor: pointer;
 	padding: 10px 10px;
 	transition: 0.3s;
-	font-size: 18px;
+	font-size: 16px;
 	border-top-left-radius: 20px;
 	/* border-top-right-radius: 20px; */
 	border-bottom-right-radius: 20px;
@@ -47,12 +47,14 @@ body {
   .button:hover {
 	background-color: #c7ccdf;
 	padding: 15px 15px;
+	font-size: 20px;
   }
   
   /* Create an active/current tablink class */
   .button.active {
 	background-color: #abbae1;
 	padding: 20px 20px;
+	font-size: 24px;
   }
   
   /* Style the tab content */
@@ -458,4 +460,3 @@ img.rounded {
 	height: 200px;
 	width: 200px;
   }
-
