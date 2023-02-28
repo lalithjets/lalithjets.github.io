@@ -22,39 +22,43 @@ body {
 	overflow: hidden;
 	border: 1px solid white;
 	/* border-bottom: 2px solid #20357b; */
-	background-color: inherit;
+	/* background-color: inherit; */
+	background-color: white;
   }
   
   /* Style the buttons inside the tab */
   .button {
 	font-weight: bold;
 	font-family: Georgia, serif;
-	background-color: #cccccc;
+	background-color: #93BFCF;
 	float: center;
-	border: 2px solid #20357b;
+	border: none;
 	outline: none;
 	cursor: pointer;
 	padding: 10px 10px;
 	transition: 0.3s;
 	font-size: 16px;
-	border-top-left-radius: 20px;
 	/* border-top-right-radius: 20px; */
-	border-bottom-right-radius: 20px;
+	/* border-bottom-right-radius: 20px; */
 	/* border-radius: 20px; */
   }
   
   /* Change background color of buttons on hover */
   .button:hover {
-	background-color: #c7ccdf;
-	padding: 15px 15px;
+	background-color: #93BFCF;
+	padding: 12px 15px;
 	font-size: 20px;
+	border-radius: 20px;
+	border: 2px solid #316b80;
   }
   
   /* Create an active/current tablink class */
   .button.active {
-	background-color: #abbae1;
-	padding: 20px 20px;
+	background-color: #93BFCF;
+	padding: 15px 20px;
 	font-size: 24px;
+	border-radius: 20px;
+	border: 3px solid #316b80;
   }
   
   /* Style the tab content */
@@ -70,16 +74,17 @@ body {
 .shape {
 	height: 100%;
 	width: 100%;
-	background-color: 	#dcebfb;
-
+	background-color: 	#6096B4;
+ 	border: 3px solid #316b80;
 	margin-bottom: 30px;
 	float: left;
 	margin-right: 20px;
+	box-shadow: 8px 12px 4px #9ecce5
   }
   
   .shape2 {
-	border-top-left-radius: 45px;
-	border-bottom-right-radius: 45px;
+	border-radius: 45px;
+	/* border-bottom-right-radius: 45px; */
   }
 
   
@@ -204,13 +209,13 @@ strong {
 
 
 h1, h2, h3 {
-	color: #103775;
+	color: #316b80;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 2px solid #20357b;
+	border-bottom: 2px solid #316b80;
 }
 
 h1 {
