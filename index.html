@@ -10,765 +10,736 @@
 		<script src="conference.js" type="text/javascript"></script>
 
 	</head>
-	<body>
+	<body id="namecard">
+		<div id="namecardtop">
+		</div>
+		<div id="namecardbottom">
+			<div id="namecardbottom">
+				<div id="namecardimg"><img src="./pic/lalith3.png"  class="namecard"></div>
+				<div id="namecardtext">
+					<h1>
+						Seenivasan <u>Lalith</u>kumar
+					</h1>
+					<p>
+						<b>PhD Candidate</b><br>
+						<a href="http://www.labren.org/mm/">Medical Mechatronics Lab (MMLAB)</a><br>
+						<a href="https://cde.nus.edu.sg/bme/"> Department of Biomedical Engineering</a><br>
+						<a href="https://www.nus.edu.sg/">National University of Singapore</a><br>
+						<a href="mailto:lalithkumar_s@u.nus.edu"><img src="./pic/mail.png" height="20px" style="margin-bottom:-5px; border-radius: 10px; border: 2px solid #16213e;"> &nbsp Lalithkumar_@u.nus.edu</a>
+					</p>	
+					<p> 
+						<a href="https://scholar.google.com/citations?user=btxQyh8AAAAJ&hl=en&oi=ao"><img src="./pic/google_scholar.png" class="icon"></a> &ensp;
+						<a href="https://www.researchgate.net/profile/Lalithkumar-Seenivasan"><img src="./pic/researchgate.png" class="icon"></a> &ensp;
+						<a href="https://orcid.org/0000-0002-0103-1234"><img src="./pic/orcid.jpeg" class="icon"></a> &ensp;
+						<a href="https://github.com/lalithjets"><img src="./pic/github.png" class="icon"></a> &ensp;
+						<a href="https://www.linkedin.com/in/lalithkumar-seenivasan/"><img src="./pic/LinkedIn_s.png" class="icon"></a> &ensp;
+						
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 	
-		<div id="layout-content" style="margin-top:25px">
-			<div class="shape shape2">
-				<table>
-					<tbody>
-						<tr>
-							<td width="650">
-								<br>
-								<div id="toptitle">					
-									<h1 style="color: #ffffff;">&nbsp &nbsp Seenivasan <u>Lalith</u>kumar</h1>
-								</div>
-								<p>
-								&nbsp &nbsp &nbsp &nbsp <b style="font-size:18px;color: #ffffff;">PhD Candidate</b><br>
-								&nbsp &nbsp &nbsp &nbsp <a style="color: #ffffff;" href="http://www.labren.org/mm/">Medical Mechatronics Lab (MMLAB)</a><br>
-								&nbsp &nbsp &nbsp &nbsp <a style="color: #ffffff;" href="https://cde.nus.edu.sg/bme/"> Department of Biomedical Engineering</a><br>
-								&nbsp &nbsp &nbsp &nbsp <a style="color: #ffffff;" href="https://www.nus.edu.sg/">National University of Singapore</a><br>
-								</p>
-								
-								<p> 
-								&nbsp &nbsp &nbsp &nbsp <a href="https://scholar.google.com/citations?user=btxQyh8AAAAJ&hl=en&oi=ao"><img src="./pic/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>
-								&nbsp <a href="https://www.researchgate.net/profile/Lalithkumar-Seenivasan"><img src="./pic/researchgate.png" height="30px" style="margin-bottom:-3px"></a>
-								&nbsp <a href="https://orcid.org/0000-0002-0103-1234"><img src="./pic/orcid.jpeg" height="30px" style="margin-bottom:-3px"></a>
-								&nbsp <a href="https://github.com/lalithjets"><img src="./pic/github.png" height="30px" style="margin-bottom:-3px"></a>
-								&nbsp <a href="https://www.linkedin.com/in/lalithkumar-seenivasan/"><img src="./pic/LinkedIn_s.png" height="30px" style="margin-bottom:-3px"></a>
-								</p>
-								
-								<p> 
-								&nbsp &nbsp &nbsp &nbsp <a style="color: #ffffff;" href="mailto:lalithkumar_s@u.nus.edu"><img src="./pic/mail.png" height="20px" style="margin-bottom:-3px"> &nbsp Lalithkumar_@u.nus.edu</a>
-								</p>
-							</td>
-							<td>
-								<img src="./pic/lalith_photo2.JPG"  class="rounded" style="border: 2px solid #ffffff;"><br>
-							</td>
-							<td width="10"></td>
-							<td>
-								<img src="./pic/lalith_photo1.jpg" class="rounded" style="border: 2px solid #ffffff;"><br>
-							</td>
-							<td width="10"></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="tab" align="center" >
-				<button class="button" onclick="openTab(event, 'Highlights')" id="defaultOpen">Highlights</button> &nbsp &nbsp &nbsp &nbsp
-				<button class="button" onclick="openTab(event, 'Publications')">Publications (Full List)</button> &nbsp &nbsp &nbsp &nbsp
+	<body id="content">
+		
+		<div class="buttontab">
+				<button class="button" onclick="openTab(event, 'Highlights')" id="defaultOpen">Highlights</button> &nbsp 
+				<button class="button" onclick="openTab(event, 'Publications')">Publications (Full List)</button> &nbsp
 				<button class="button" onclick="openTab(event, 'Resume')">Resume</button>
-			</div>
+		</div>
+		
+		<div id="Highlights" class="tabscontent">
+			<div id="biography" class="subheading">
+				<h2 ><img src="./pic/biography.png" class = "hicon"> <u>Short Biography</u></h2>
 
-			<br><br>
-
-			<div id="Highlights" class="tabcontent" >
-
-				<h2 ><img src="./pic/biography.png" height="22px" style="margin-bottom:-4px"> &nbsp Short Biography</h2>
-
-				<p align="justify">
-				I am currently a <em>fourth-year PhD candidate</em> at the Medical Mechatronics Lab (<a href="http://www.labren.org/mm/">MMLAB</a>), 
-				<a href="https://cde.nus.edu.sg/bme/"> Department of Biomedical Engineering</a>, 
-				<a href="https://www.nus.edu.sg/">National University of Singapore</a>, 
-				supervised by <a href="https://cde.nus.edu.sg/bme/staff/dr-ren-hongliang/">Prof. Ren Hongliang</a>. 
-				I received my Bachelor's degree (Hons) in <a href="https://cde.nus.edu.sg/ece/">Electrical Engineering</a> 
-				from the <a href="https://www.nus.edu.sg/">National University of Singapore</a> and 
-				my Diploma in  <a href="https://www.tp.edu.sg/t66">Mechatronics</a> 
-				from <a href="https://www.tp.edu.sg/">Temasek Polytechnic</a>, Singapore.
-				</p>
-				<p align="justify">
-				My research interests include artificial intelligence and its applications in robotic surgery. My current research topics include:
-					<ul>
-						<li>
-						<em>Scene understanding in robotic surgery</em> - semantic segmentation, surgical scene graph, 
-						surgical data science, and surgical action & phase recognition.
-						</li>
-						<li>
-						<em>Natural language processing in robotic surgery</em> - surgical visual question answering and 
-						surgical scene captioning.
-						</li>
-					</ul>
-				</p>
-				
-				<h2><img src="./pic/news_feeds.png" height="22px" style="margin-bottom:-4px"> &nbsp News Feeds</h2>
-				
-				<div style="height: 280px; overflow: auto;">
-					<ul>
-						<li>
-						[02/2023] A book chapter on <a href="https://link.springer.com/chapter/10.1007/978-981-19-5932-5_13" target="_blank">
-							Untethered Soft Ferromagnetic Quad-Jaws Cootie Catcher with Selectively Coupled Degrees of Freedom</a> got accepted.
-						</li>
-
-						<li>
-						[02/2023] A paper on <a href="https://arxiv.org/pdf/2302.01049.pdf" target="_blank">
-							Paced-Curriculum Distillation with Prediction and Label Uncertainty for Image Segmentation</a> 
-							accepted in International Journal of Computer Assisted Radiology and Surgery.
-						</li>
-
-						<li>
-						[01/2023] A paper on <a href="" target="_blank">Surgical-VQLA: Transformer with Gated Vision-Language Embedding for 
-							Visual Question Localized-Answering in Robotic Surgery</a> accepted in <a href="https://www.icra2023.org/" 
-							target="_blank">IEEE ICRA 2023 Conference</a>. 
-						</li>
-				
-						<li>
-						[01/2023] A paper on <a href="https://arxiv.org/pdf/2211.15327.pdf" target="_blank">Task-aware asynchronous multi-task model with class incremental contrastive learning for surgical scene understanding</a> accepted in <a href="https://link.springer.com/article/10.1007/s11548-022-02800-2" target="_blank">International Journal of Computer Assisted Radiology and Surgery</a>.
-						</li>
-
-						<li>
-						[10/2022] A paper on <a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf" target="_blank">Rethinking Feature Extraction: Gradient-Based Localized Feature Extraction for End-To-End Surgical Downstream Tasks</a> accepted in both IEEE RA-L Journal and  <a href="https://www.icra2023.org/" target="_blank">IEEE ICRA 2023 Conference</a>. 
-						</li>
-
-						<li>
-						[09/2022] Participated in <a href="https://www.synapse.org/#!Synapse:syn28548633/wiki/" target="_blank">SimCol-to-3D 2022 - 3D Reconstruction During Colonoscopy</a> in <a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>.
-						</li> 
-
-						<li>
-						[09/2022] Presenting my paper on <a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer</a> accepted in <a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>.
-						</li> 
-
-						<li>
-						[06/2022] A paper on <a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer</a> accepted in <a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>.
-						</li>
-						
-						<li>
-						[05/2022] Presented my paper on on <a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding</a> at <a href="https://www.icra2022.org/" target="_blank">IEEE ICRA 2022 Conference</a>.
-						</li> 
-
-						<li>
-						[05/2022] A paper on <a href="https://www.mdpi.com/2313-7673/7/2/68" target="_blank">Biomimetic Incremental Domain Generalization with a Graph Network for Surgical Scene Understanding</a> accepted in MDPI Biomimetics Journal. 
-						</li>
-
-						<li>
-						[01/2022] A paper on <a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding</a> accepted in both IEEE RA-L Journal and  <a href="https://www.icra2022.org/" target="_blank">IEEE ICRA 2022 Conference</a>. 
-						</li>
-
-						<li>
-						[10/2021] Participated in <a href="https://arxiv.org/pdf/2202.05821.pdf" target="_blank">PEg TRAnsfer Workflow Recognition Challenge Report: Do Multi-Modal Data Improve Recognition?</a> in <a href="https://www.miccai2021.org/en/" target="_blank">MICCAI 2021 Conference</a>. 
-						</li>
-
-						<li>
-						[10/2021] Participated in <a href="https://arxiv.org/pdf/2204.04746.pdf" target="_blank">CholecTriplet2021: A benchmark challenge for surgical action triplet recognition</a> in <a href="https://www.miccai2021.org/en/" target="_blank">MICCAI 2021 Conference</a>. 
-						</li>
-
-						<li>
-						[09/2021] A paper on <a href="https://arxiv.org/pdf/2109.05263" target="_blank">Class-Distribution-Aware Calibration for Long-Tailed Visual Recognition</a> is accepted in <a href="https://sites.google.com/view/udlworkshop2021/home?pli=1" target="_blank">UDL Workshop, ICML 2021 Conference</a>. 
-						</li>
-
-						<li>
-						[08/2021] A paper on <a href="https://www.researchgate.net/profile/Liang-Qiu-7/publication/354075045_ScoopNet_6DOF_Pose_Estimation_pipeline_for_Origami-inspired_Worm_Robots/links/62ac796923f3283e3aef5d29/ScoopNet-6DOF-Pose-Estimation-pipeline-for-Origami-inspired-Worm-Robots.pdf" target="_blank">ScoopNet: 6DOF Pose Estimation pipeline for Origami-inspired Worm Robots</a> is accepted in <a href="https://www.ieee-ras.org/component/rseventspro/event/2009-icdl-2021" target="_blank">IEEE ICDL 2021 Conference</a>. 
-						</li>
-
-						<li>
-						[03/2021] A paper on <a href="https://ieeexplore.ieee.org/abstract/document/9262941" target="_blank">Shape Tracking of Flexible Morphing Matters From Depth Images</a> is accepted in IEEE Sensors Journal. 
-						</li>
-
-						<li>
-						[07/2020] A paper on <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202000092" target="_blank">Stent Deployment Detection Using Radio Frequency-Based Sensor and Convolutional Neural Networks</a> accepted in Advanced Intelligent Systems Journal. 
-						</li>
-						
-						<li>
-						[07/2020] A book chapter on <a href="https://www.sciencedirect.com/science/article/pii/B9780128213506000123" target="_blank">Tunable stiffness using negative Poisson's ratio toward load-bearing continuum tubular mechanisms in medical robotics</a> got accepted.
-						</li>
-
-						<li>
-						[06/2020] A book chapter on <a href="https://www.sciencedirect.com/science/article/pii/B9780128175958000079" target="_blank">Tendon routing and anchoring for cable-driven single-port surgical manipulators with spring backbones and luminal constraints</a> got accepted.
-						</li>
-						
-						<li>
-						[06/2020] A paper on <a href="https://arxiv.org/abs/2007.03357" target="_blank">Graph Structure Representation in Robotic Surgery</a> accepted in <a href="https://miccai2020.org/en/" target="_blank">MICCAI 2020 Conference</a>.
-						</li>
-						
-						<li>
-						[08/2019] Started my PhD under Prof. Ren Hongliang at National University of Singapore.
-						</li>
-					</ul>
-				</div>
-
-
-				<h2><img src="./pic/manuscript.png" height="22px" style="margin-bottom:-4px"> &nbsp Key Publications</h2>
-				(* Co-first author)
-				<table id="tbPublications" width="100%">
-					<tbody>
-
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/TA_MTL.png" width="220px" height="130px"  style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Task-aware asynchronous multi-task model with class incremen-
-								tal contrastive learning for surgical scene understanding. <br>
-								<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Mengya Xu, Chwee Ming Lim and Hongliang Ren. <br>
-								<em>International Journal of Computer Assisted Radiology and Surgery</em> (<i><b>IJCARS</b></i>), 2023.
-								<p>
-								[<a href="https://arxiv.org/pdf/2211.15327.pdf" target="_blank">preprint</a>]
-								[<a href="https://github.com/lalithjets/Domain-adaptation-in-MTL" target="_blank">code</a>]
-								<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-								<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-				
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/Rethinking Feature Extraction.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Rethinking Feature Extraction: Gradient-Based Localized Feature Extraction for End-To-End Surgical Downstream Tasks. <br>
-								Winnie Pang*, Mobarakol Islam*, Sai Mitheran, <b>Lalithkumar Seenivasan</b>, Mengya Xu and Hongliang Ren. <br>
-								<em>IEEE Robotics and Automation Letters & IEEE International Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2023.
-								<p>
-								[<a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf" target="_blank">preprint</a>]
-								[<a href="https://github.com/PangWinnie0219/GradCAMDownstreamTask" target="_blank">code</a>]
-								<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-								<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/Surgical_VQA.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer. <br>
-								<b>Lalithkumar Seenivasan*</b>, Mobarakol Islam*, Adithya K. Krishna and Hongliang Ren. <br>
-								<em>Medical Image Computing and Computer-Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2022.
-								<p>
-								[<a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">preprint</a>]
-								[<a href="https://github.com/lalithjets/Surgical_VQA" target="_blank">code</a>]
-								[<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>] 
-								[<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>] 
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/Global-Reasoned_Multi-Task_Learning.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>		
-							<td align="justify"> 
-								Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding. <br>
-								<b>Lalithkumar Seenivasan</b>, Sai Mitheran, Mobarakol Islam and Hongliang Ren. <br>
-								<em>IEEE Robotics and Automation Letters & IEEE International Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2022.
-								<p>
-								[<a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">preprint</a>][<a href="https://github.com/lalithjets/Global-reasoned-multi-task-model" target="_blank">code</a>]
-								[<a href="https://drive.google.com/file/d/1deAY5ThZRm9Y3AFX3ArIvde-LdE8imfx/view?usp=sharing" target="_blank">poster</a>]
-								[<a href="https://youtu.be/UOIcp3y4o1U" target="_blank">video</a>] 
-								</p>	
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-						<tr>
-							<td width="230">
-								<img src="paper_photos/Learning_Reasoning_Surgical_Graph.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Learning and Reasoning with the Graph Structure Representation in Robotic Surgery. <br>
-								Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, Lim Chwee Ming and Hongliang Ren. <br>
-								<em>Medical Image Computing and Computer Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2020.  <br> 
-								<p>[<a href="https://arxiv.org/pdf/2007.03357.pdf" target="_blank">preprint</a>][<a href="https://github.com/mobarakol/Surgical_SceneGraph_Generation" target="_blank">code</a>]  </p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-					</tbody>
-				</table>
-
-
-				<h2><img src="./pic/dataset.png" height="22px" style="margin-bottom:-4px"> &nbsp Dataset Release</h2>
-				
-				<table style="border-spacing:2px">	
-					<ul>
-						<li>
-						<a href="https://drive.google.com/drive/folders/1hu_yK27Xz2_lvjjZ97-WF2MK_JO14MWI" target="_blank">Surgical-VQA</a>
-						and MICCAI2022 paper: <a href="https://link.springer.com/chapter/10.1007/978-3-031-16449-1_4" target="_blank">
-						Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer</a>
-						</li>
-						<li>
-						<a href="https://drive.google.com/file/d/16G_Pf4E9KjVq7j_7BfBKHg0NyQQ0oTxP" target="_blank">Tool-Tissue Interaction 
-						Graph</a>with MICCAI2020 paper: <a href="https://link.springer.com/chapter/10.1007/978-3-030-59716-0_60" 
-						target="_blank">Learning and Reasoning with the Graph Structure Representation in Robotic Surgery</a> 
-						</li>	
-					<ul>
-				</table>
-
-				<h2><img src="./pic/awards.png" height="22px" style="margin-bottom:-4px"> &nbsp Key Awards</h2>
-				
-				<table style="border-spacing:2px">	
-					<ul>
-						<li><b>Outstanding Undergraduate Researcher Prize AY2017/2018</b>, National University of Singapore.</li>
-						<li><b>FoE 32nd INNOVATION & RESEARCH AWARD (2018)</b>, faculty of engineering (FoE), National University of Singapore.</li>
-						<li><b>Singapore Manufacturing Federation Metal, Machinery & Engineering Industry Group Project Prize 2013</b>, Temasek Polytechnic.</a></li>
-						<li><b>Commendation Award for Major Project 2013</b>, Temasek Polytechnic.</li>
-					</ul>
-				</table>
-
-				<h2><img src="./pic/talks.png" height="22px" style="margin-bottom:-4px"> &nbsp Key Talks and Presentations</h2>
-				<ul>
-					<li>
-					Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer.<br>
-					Medical Image Computing and Computer-Assisted Intervention (MICCAI), Singapore, Sep. 2022.
-					</li>
-					<li>
-					CLEARNESS: Cross-scaLe tEmporAl gRaph NEtwork for Super-reSolutions.<br>
-					IUPESM WORLD CONGRESS ON MEDICAL PHYSICS AND BIOMEDICAL ENGINEERING, Singapore, Jun. 2022.
-					</li>
-					<li>
-					Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding.<br>
-					IEEE International Conference on Robotics and Automation, Philadelphia, May. 2022.
-					</li>
-				</ul>
-
-				<h2><img src="./pic/services.png" height="22px" style="margin-bottom:-4px"> &nbsp Academic Services</h2>
-				<ul>
-					<li><a href="https://sites.google.com/view/dart2022/home" target="_blank"> Program Committee, 
-					DART Workshop, Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022. </a></li>
-					<li>Reviewer:</li>
-					<ul class="b">
-						<li>IEEE Transactions on Medical Imaging (2023).	</li>
-						<li>IEEE International Conference on Robotics and Automation (2023).</li>
-						<li>DART Workshop, Medical Image Computing and Computer Assisted Intervention (2022).</li>
-						<li>IEEE Sensors  Journal (2022).</li>	
-					</ul>
-				</ul>
-
-				<!-- <h2>Teaching</h2>
-				<table id="tbTeaching" border="0" width="100%">
-					<tbody>
-						<tr>
-							<td> 2016-2018</td><td>Fall</td><td>EE2024:Programming for Computer Interfaces, ECE Dept, NUS</td>
-						</tr>
-					</tbody>
-				</table> -->
-
-				<div id="footer">
-					<div id="footer-text"></div>
-				</div>
-					
 				<p>
-				<center>
-					<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=250&t=n&d=9M3ueKzaQxglq5AGb6vfsCiCDSIwT_1Zt8bGvgRFK3I'></script>
-					<br>
-					&copy; Seenivasan Lalithkumar | Last updated: Feb 2023
-				</center>
+					I am currently a <em>fourth-year PhD candidate</em> at the Medical Mechatronics Lab (<a href="http://www.labren.org/mm/">MMLAB</a>), 
+					<a href="https://cde.nus.edu.sg/bme/"> Department of Biomedical Engineering</a>, 
+					<a href="https://www.nus.edu.sg/">National University of Singapore</a>, supervised by <a href="https://cde.nus.edu.sg/bme/staff/dr-ren-hongliang/">Prof. Ren Hongliang</a>. 
+					I actively collaborate with <a href="https://mobarakol.github.io/">Dr. Mobarakol Islam</a>.
+					I received my Bachelor's degree (Hons) in <a href="https://cde.nus.edu.sg/ece/">Electrical Engineering</a> 
+					from the <a href="https://www.nus.edu.sg/">National University of Singapore</a> and 
+					my Diploma in  <a href="https://www.tp.edu.sg/t66">Mechatronics</a> 
+					from <a href="https://www.tp.edu.sg/">Temasek Polytechnic</a>, Singapore.
 				</p>
+				<p>
+				My research interests include artificial intelligence and its applications in robotic surgery. My current research topics include:
+				</p>
+				<ul>
+					<li>
+						<b>Scene understanding in robotic surgery</b> - semantic segmentation, surgical scene graph, 
+							surgical data science, and surgical action & phase recognition.
+					</li>
+					<li>
+						<b>Natural language processing in robotic surgery</b> - surgical visual question answering and 
+						surgical scene captioning.
+					</li>
+				</ul>
 			</div>
-			  
-			<div id="Publications" class="tabcontent">
 
-				<!-- <div id="parentContainer" style="height: 150px; width: 100%;">
-					<div id="conference_chart" style="float: left;  height: 130px; width: 50%;"></div>
-					<div id="journal_chart" style="float: right;  height: 130px; width: 50%;"></div>
-					<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-				</div> -->
-
-				<table style="border: 2px solid #316b80; border-radius: 5%; box-shadow: 4px 4px 3px #9ecce5">
-					<tbody>
-
-						<tr>
-							<td width="5%"></td>
-							<td width="400px">
-								<!-- <div id="conference_chart" style="float: center;  height: 130px; "></div> -->
-								<img src="./donut_chart/conference.png" width="400px">
-							</td>
-							<td width="5%"></td>
-							<td width="400px"> 
-								<!-- <div id="journal_chart" style="float: right;  height: 130px;"></div>
-								<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
-								<img src="./donut_chart/journal.png" width="400px">
-							</td>
-							<td width="5%"></td>
-						</tr>
-
-					</tbody>
-				</table>
-
-				<h2 style="height: 100%;"><img src="./pic/manuscript.png" height="22px" style="margin-bottom:-4px"> &nbsp Conference and Journal Publications</h2>
+			<div id="newfeeds" class="subheading">
+				<h2><img src="./pic/news_feeds.png" class="hicon"/> <u>News Feeds</u></h2>
 				
-				<div style="height: 700px; width:100%;overflow: auto;">
-					<table id="tbPublications" width="100%">
-						<tbody>
+				<div class="scrolling-wrapper">
+					<div class="card">
+						<h2> Book Chapter </h2><h3> [02/2023] </h3>
+						<p> A book chapter on <a href="https://link.springer.com/chapter/10.1007/978-981-19-5932-5_13" target="_blank">Untethered 
+							Soft Ferromagnetic Quad-Jaws Cootie Catcher with Selectively Coupled Degrees of Freedom </a> was accepted.</p>
+					</div>
+					<div class="card">
+						<h2> Journal Paper </h2><h3> [02/2023] </h3>
+						<p> A paper on <a href="https://arxiv.org/pdf/2302.01049.pdf" target="_blank">Paced-Curriculum Distillation with Prediction 
+							and Label Uncertainty for Image Segmentation</a> accepted in International Journal of Computer Assisted Radiology and Surgery.</p>
+					</div>
 
+					<div class="card">
+						<h2>Conference Paper</h2><h3>[01/2023]</h3>
+						<p> A paper on <a href="" target="_blank">Surgical-VQLA: Transformer with Gated Vision-Language Embedding for 
+							Visual Question Localized-Answering in Robotic Surgery</a> was accepted in <a href="https://www.icra2023.org/" 
+							target="_blank">IEEE ICRA 2023 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Conf & Journal Paper</h2> <h3>[10/2022] </h3>
+						<p> A paper on <a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf"
+							 target="_blank">Rethinking Feature Extraction: Gradient-Based Localized Feature Extraction for End-To-End Surgical Downstream Tasks</a> was accepted in both IEEE RA-L Journal 
+							 and  <a href="https://www.icra2023.org/" target="_blank">IEEE ICRA 2023 Conference</a>. </p> 
+					</div>
+
+					<div class="card">
+						<h2>Competition</h2><h3>[09/2022]</h3>
+						<p> Participated in <a href="https://www.synapse.org/#!Synapse:syn28548633/wiki/" target="_blank">SimCol-to-3D 2022 - 3D Reconstruction During Colonoscopy</a> in 
+							<a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>.</p> 
+					</div> 
+
+					<div class="card">
+						<h2>Conf Presentation</h2><h3>[09/2022]</h3>
+						<p> Presenting my paper on <a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer</a>
+							accepted in <a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>.</p>
+					</div> 
+
+					<div class="card">
+						<h2>Conference Paper</h2><h3>[06/2022]</h3>
+						<p> A paper on <a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer</a> was accepted 
+							in <a href="https://conferences.miccai.org/2022/en/" target="_blank">MICCAI 2022 Conference</a>. </p> 
+					</div>
+						
+					<div class="card">
+						<h2>Conf Presentation</h2> <h3>[05/2022]</h3>
+						<p> Presented my paper on on <a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding</a> at
+							 <a href="https://www.icra2022.org/" target="_blank">IEEE ICRA 2022 Conference</a>.</p> 
+					</div> 
+
+					<div class="card">
+						<h2>Journal Paper</h2><h3>[05/2022]</h3> 
+						<p> A paper on <a href="https://www.mdpi.com/2313-7673/7/2/68" target="_blank">Biomimetic Incremental Domain Generalization with a Graph Network for Surgical Scene 
+							Understanding</a> was accepted in MDPI Biomimetics Journal. </p>
+					</div>
+
+					<div class="card">
+						<h2>Conf & Journal Paper</h2><h3>[01/2022]</h3>
+						<p> A paper on <a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding</a> was accepted 
+							in both IEEE RA-L Journal and  <a href="https://www.icra2022.org/" target="_blank">IEEE ICRA 2022 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Competition</h2><h3>[10/2021]</h3> 
+						<p> Participated in <a href="https://arxiv.org/pdf/2202.05821.pdf" target="_blank">PEg TRAnsfer Workflow Recognition Challenge Report: Do Multi-Modal Data 
+							Improve Recognition?</a> in <a href="https://www.miccai2021.org/en/" target="_blank">MICCAI 2021 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Competition</h2><h3>[10/2021]</h3>
+						<p> Participated in <a href="https://arxiv.org/pdf/2204.04746.pdf" target="_blank">CholecTriplet2021: A benchmark challenge for surgical action triplet 
+							recognition</a> in <a href="https://www.miccai2021.org/en/" target="_blank">MICCAI 2021 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Conference Workshop</h2><h3>[09/2021]</h3>
+						<p> A paper on <a href="https://arxiv.org/pdf/2109.05263" target="_blank">Class-Distribution-Aware Calibration for Long-Tailed 
+							Visual Recognition</a> is accepted in <a href="https://sites.google.com/view/udlworkshop2021/home?pli=1" target="_blank">UDL Workshop, ICML 2021 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Conference Paper</h2><h3>[08/2021]</h3> 
+						<p> A paper on <a href="https://www.researchgate.net/profile/Liang-Qiu-7/publication/354075045_ScoopNet_6DOF_Pose_Estimation_pipeline_for_Origami-inspired_Worm_Robots/links/62ac796923f3283e3aef5d29/ScoopNet-6DOF-Pose-Estimation-pipeline-for-Origami-inspired-Worm-Robots.pdf" 
+							target="_blank">ScoopNet: 6DOF Pose Estimation pipeline for Origami-inspired Worm Robots</a> was accepted in <a href="https://www.ieee-ras.org/component/rseventspro/event/2009-icdl-2021" target="_blank"> 
+							IEEE ICDL 2021 Conference</a>. </p>
+					</div>
+
+					<div class="card">
+						<h2>Journal Paper</h2><h3>[03/2021]</h3>
+						<p>A paper on <a href="https://ieeexplore.ieee.org/abstract/document/9262941" target="_blank">Shape Tracking of Flexible Morphing Matters 
+							From Depth Images</a> was accepted in IEEE Sensors Journal. </p> 
+					</div>
+
+					<div class="card">
+						<h2>Journal Paper</h2>
+						<h3>[07/2020]</h3>
+						<p> A paper on <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202000092" target="_blank">Stent Deployment Detection Using Radio Frequency-Based Sensor and 
+							Convolutional Neural Networks</a> was accepted in Advanced Intelligent Systems Journal. </p>
+					</div>
+						
+					<div class="card">
+						<h2>Book Chapter</h2><h3>[07/2020]</h3> 
+						<p>A book chapter on <a href="https://www.sciencedirect.com/science/article/pii/B9780128213506000123" target="_blank">Tunable stiffness using negative Poisson's ratio toward 
+							load-bearing continuum tubular mechanisms in medical robotics</a> was accepted.</p>
+					</div>
+
+					<div class="card">
+						<h2>Book Chapter</h2><h3>[06/2020]</h3> 
+						<p>A book chapter on <a href="https://www.sciencedirect.com/science/article/pii/B9780128175958000079" target="_blank">Tendon routing and anchoring for cable-driven single-port 
+							surgical manipulators with spring backbones and luminal constraints</a> was accepted. </p>
+					</div>
+						
+					<div class="card">
+						<h2>Conference Paper</h2><h3>[06/2020]</h3> 
+						<p>A paper on <a href="https://arxiv.org/abs/2007.03357" target="_blank">Graph Structure Representation in Robotic Surgery</a> was accepted 
+							in <a href="https://miccai2020.org/en/" target="_blank">MICCAI 2020 Conference</a>.</p>
+					</div>
+						
+					<div class="card">
+						<h2>Start of PhD</h2><h3>[08/2019]</h3>
+						<p> Started my PhD under Prof. Ren Hongliang at National University of Singapore.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="Key-Publications" class="subheading">
+				<h2><img src="./pic/manuscript.png" class="hicon"/> <u>Key Publications</u></h2>
+				<p style="text-align: center;">(* Co-first author)</p>
+
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="./paper_photos/Surgical_VQA.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b>Surgical-VQA: Visual Question <br> Answering in Surgical Scenes <br> Using Transformer.</b> <br>
+							<b>Lalithkumar Seenivasan*</b>, Mobarakol Islam*, <br> Adithya K. Krishna and Hongliang Ren. <br>
+							<em>Medical Image Computing and Computer-Assisted <br> Intervention</em> (<i><b>MICCAI</b></i>), 2022.
+							<br>
+							[<a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">preprint</a>]
+							[<a href="https://github.com/lalithjets/Surgical_VQA" target="_blank">code</a>]
+							[<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>] 
+							[<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>] 
+						</p>
+					</div>
+				</div>
+				
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="./paper_photos/Global-Reasoned_Multi-Task_Learning.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b>Global-Reasoned Multi-Task <br> Learning Model for Surgical <br> Scene Understanding. </b><br>
+							<b>Lalithkumar Seenivasan*</b>, Sai Mitheran*, <br> Mobarakol Islam and Hongliang Ren. <br>
+							<em>IEEE Robotics and Automation Letters & IEEE International <br> Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2022.
+							<br>
+							[<a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">preprint</a>][<a href="https://github.com/lalithjets/Global-reasoned-multi-task-model" target="_blank">code</a>]
+							[<a href="https://drive.google.com/file/d/1deAY5ThZRm9Y3AFX3ArIvde-LdE8imfx/view?usp=sharing" target="_blank">poster</a>]
+							[<a href="https://youtu.be/UOIcp3y4o1U" target="_blank">video</a>] 
+						</p>
+					</div>
+				</div>
+
+				
+				  
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="./paper_photos/Rethinking Feature Extraction.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b>Rethinking Feature Extraction: Gradient-Based <br> Localized Feature Extraction for <br> End-To-End Surgical Downstream Tasks.</b> <br>
+							Winnie Pang*, Mobarakol Islam*, Sai Mitheran, <b>Lalithkumar <br> Seenivasan</b>, Mengya Xu and Hongliang Ren. <br>
+							<em>IEEE Robotics and Automation Letters & IEEE International <br> Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2023.
+							<br>
+							[<a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf" target="_blank">preprint</a>]
+							[<a href="https://github.com/PangWinnie0219/GradCAMDownstreamTask" target="_blank">code</a>]
+						</p>
+					</div>
+				</div>
+
+				  
+				
+
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="paper_photos/Learning_Reasoning_Surgical_Graph.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b>Learning and Reasoning with <br> the Graph Structure Representation <br> in Robotic Surgery. </b><br>
+							Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, <br> Lim Chwee Ming and Hongliang Ren. <br>
+							<em>Medical Image Computing and Computer Assisted <br> Intervention</em> (<i><b>MICCAI</b></i>), 2020. 
+							<br> 
+							[<a href="https://arxiv.org/pdf/2007.03357.pdf" target="_blank">preprint</a>][<a href="https://github.com/mobarakol/Surgical_SceneGraph_Generation" target="_blank">code</a>] 
+						</p>
+					</div>
+				</div>
+				
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="./paper_photos/TA_MTL.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b>Task-aware asynchronous multi-task model with class <br> incremental contrastive learning for surgical <br> scene understanding. </b><br>
+							<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Mengya Xu, <br> Chwee Ming Lim and Hongliang Ren. <br>
+							<em>International Journal of Computer Assisted Radiology and <br> Surgery</em> (<i><b>IJCARS</b></i>), 2023.
+							<br>
+							[<a href="https://arxiv.org/pdf/2211.15327.pdf" target="_blank">preprint</a>]
+							[<a href="https://github.com/lalithjets/Domain-adaptation-in-MTL" target="_blank">code</a>]
+						</p>
+					</div>
+				</div>
+
+				<div class="keypublicationtiles keypublicationtile">
+					<img src="paper_photos/pcd.png" class="key-pub-title"/>
+					<br>
+					<div id="key-pub-tile-caption">
+						<p>
+							<b> Paced-Curriculum Distillation <br> with Prediction and Label Uncertainty <br> for Image Segmentation</b> <br>
+							Mobarakol Islam*, <b>Lalithkumar Seenivasan*</b>, SP Sharan, <br> VK Viekash, Bhavesh Gupta, Ben Glocker and Hongliang Ren. <br>
+							<em>International Journal of Computer Assisted <br> Radiology and Surgery</em> (<i><b>IJCARS</b></i>), 2023.
+							<br> 
+							[<a href="https://arxiv.org/pdf/2302.01049.pdf" target="_blank">preprint</a>]
+							[<a href="https://github.com/mobarakol/P-CD" target="_blank">code</a>]
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="dataset" class="subheading" height="200px">
+				<h2><img src="./pic/dataset.png" class="hicon" style="border-radius: 10px;"/> <u>Dataset Release</u></h2>
+				
+				<div class="datasettiles datasettile">
+					<h2>Surgical-VQA</h2>
+					<h3><a href="https://drive.google.com/drive/folders/1hu_yK27Xz2_lvjjZ97-WF2MK_JO14MWI" target="_blank">Dataset</a></h3>
+					<p>
+						Published in MICCAI2022 <br>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-16449-1_4" target="_blank">
+						Surgical-VQA: Visual Question Answering <br>
+						in Surgical Scenes Using Transformer</a>
+						<br>
+					</p>
+				</div>
+
+				<div class="datasettiles datasettile">
+					<h2>Tool-Tissue Interaction</h2>
+					<h3><a href="https://drive.google.com/file/d/16G_Pf4E9KjVq7j_7BfBKHg0NyQQ0oTxP" target="_blank">Dataset</a></h3>
+					<p>
+						Published in MICCAI2020 paper <br>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-030-59716-0_60" target="_blank">
+						Learning and Reasoning with the Graph <br>
+						Structure Representation in Robotic Surgery</a> 
+					</p>
+				</div>
+			</div>	
+			
+			<div id="awards" class="subheading">
+				<h2><img src="./pic/awards.png" class="hicon"/> <u>Academic Awards</u></h2>
+
+				<div class="awardtiles awardtile">
+					<img src="pic/award_ribbon.png" class="award-title"/>
+					<br>
+					<div id="award-tile-caption">
+						<h2> <br> Outstanding Undergraduate <br> Researcher Prize <br>  <br> </h2>
+						<h3>National University of Singapore<br>AY2017/2018</h3>
+					</div>
+				</div>
+
+				<div class="awardtiles awardtile">
+					<img src="pic/award_ribbon.png" class="award-title"/>
+					<br>
+					<div id="award-tile-caption">
+						<h2> <br> FoE 32nd INNOVATION <br> & RESEARCH AWARD <br>  <br> </h2>
+						<h3>National University of Singapore <br> 2018</h3>
+					</div>
+				</div>
+
+				<div class="awardtiles awardtile">
+					<img src="pic/award_ribbon.png" class="award-title"/>
+					<br>
+					<div id="award-tile-caption">
+						<h2> Singapore Manufacturing <br> Federation Metal, <br> Machinery & Engineering <br> Industry Group Project Prize </h2> 
+						<h3> Temasek Polytechnic <br> 2013</h3>
+					</div>
+				</div>
+
+				<div class="awardtiles awardtile">
+					<img src="pic/award_ribbon.png" class="award-title"/>
+					<br>
+					<div id="award-tile-caption">
+						<h2> <br> Commendation Award <br> for Major Project <br> <br></h2>
+						<h3> Temasek Polytechnic <br> 2013</h3>
+					</div>
+				</div>
+			</div>
+
+			<div id="talks" class="subheading">
+
+				<h2><img src="./pic/talks.png" class="hicon"/> <u>Key Talks and Presentations</u></h2>
+				<div class="talktiles talktile">
+					<img src="talk_slide_pic/talk_surgical_vqa.jpg" class="talk-title"/>
+					<br>
+					<div id="talk-tile-caption">
+						<h3> Surgical-VQA: Visual Question Answering <br> in Surgical Scenes Using Transformer</h3>
+						<p>
+							Medical Image Computing and Computer-<br>Assisted Intervention (MICCAI) <br> Singapore, Sep. 2022.
+						</p>
+					</div>
+				</div>
+				<div class="talktiles talktile">
+					<img src="talk_slide_pic/talk_clearness.jpg" class="talk-title"/>
+					<br>
+					<div id="talk-tile-caption">
+						<h3>CLEARNESS: Cross-scaLe tEmporAl <br> gRaph NEtwork for Super-reSolutions</h3>
+						<p>
+							IUPESM WORLD CONGRESS ON MEDICAL <br>PHYSICS AND BIOMEDICAL ENGINEERING <br> Singapore, Jun. 2022.
+						</p>
+					</div>
+				</div>
+				<div class="talktiles talktile">
+					<img src="talk_slide_pic/talk_global_ssu.jpg" class="talk-title"/>
+					<br>
+					<div id="talk-tile-caption">
+						<h3>Global-Reasoned Multi-Task Learning <br> Model for Surgical Scene Understanding</h3>
+						<p>
+							IEEE International Conference on <br> Robotics and Automation <br> Philadelphia, May. 2022.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="academic-services" class="subheading">
+				<h2><img src="./pic/services.png" class="hicon"> <u>Academic Services</u></h2>
+				
+				<h3>Program Committee</h3> </li>
+				<p>
+					<a href="https://sites.google.com/view/dart2022/home" target="_blank"> DART Workshop, Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022. </a></li>
+				</p>
+
+				<h3>Reviewer</h3>
+				<p>
+					IEEE Transactions on Medical Imaging (2023)<br>
+					IEEE International Conference on Robotics and Automation (2023)<br>
+					DART Workshop, Medical Image Computing and Computer Assisted Intervention (2022)<br>
+					IEEE Sensors  Journal (2022)
+				</p>
+					
+			</div>
+
+			<div id="footer" class="subheading">	
+				<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=n&d=9M3ueKzaQxglq5AGb6vfsCiCDSIwT_1Zt8bGvgRFK3I'></script>
+				<h3> &copy; Seenivasan Lalithkumar | Last updated: March 2023 </h3>
+			</div>
+		</div>
+				
+		<div id="Publications" class="tabscontent">
+			<div id="publication-charts">
+				<div id="conference_chart" class="publication-chart"></div>
+				<div id="journal_chart" class="publication-chart"></div>
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+			</div>
+			
+			<div id="conf-journal-publication" class="subheading">
+				<h2>	<img src="./pic/manuscript.png" class="hicon"> <u>Conference and Journal Publications</u></h2>
+
+				<div id="conf-journal-publication-list">
+					<div class="publicationstiles publicationstile">
+						<table>
 							<tr>
-								<td width="230">
-									<img src="./paper_photos/pcd.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
+								<td>
+									<img src="./paper_photos/pcd.png" class = "publications-img-tile">
 								</td>
-								<td align="justify"> 
-									Paced-Curriculum Distillation with Prediction and Label Uncertainty for Image Segmentation. <br>
-									Mobarakol Islam*, <b>Lalithkumar Seenivasan*</b>, SP Sharan, VK Viekash, Bhavesh Gupta, Ben Glocker and Hongliang Ren. <br>
-									<em>International Journal of Computer Assisted Radiology and Surgery</em> (<i><b>IJCARS</b></i>), 2023.
-									<p>
+								<td class ="publications-caption"> 
+									<h3> Paced-Curriculum Distillation with <br> Prediction and Label Uncertainty for <br> Image Segmentation. </h3>
+									Mobarakol Islam*, <b>Lalithkumar Seenivasan*</b>, SP Sharan, <br> VK Viekash, Bhavesh Gupta, Ben Glocker and Hongliang Ren. <br>
+									<em>International Journal of Computer Assisted Radiology <br> and Surgery</em> (<i><b>IJCARS</b></i>), 2023. <br>
 									[<a href="https://arxiv.org/pdf/2302.01049.pdf" target="_blank">preprint</a>]
 									[<a href="https://github.com/mobarakol/P-CD" target="_blank">code</a>]
-									<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-									<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-									</p>
 								</td>
 							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+						</table>
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="./paper_photos/TA_MTL.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Task-aware asynchronous multi-task model with class incremen-
-									tal contrastive learning for surgical scene understanding. <br>
-									<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Mengya Xu, Chwee Ming Lim and Hongliang Ren. <br>
-									<em>International Journal of Computer Assisted Radiology and Surgery</em> (<i><b>IJCARS</b></i>), 2023.
-									<p>
-									[<a href="https://arxiv.org/pdf/2211.15327.pdf" target="_blank">preprint</a>]
-									[<a href="https://github.com/lalithjets/Domain-adaptation-in-MTL" target="_blank">code</a>]
-									<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-									<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-					
-							<tr>
-								<td width="230">
-									<img src="./paper_photos/Rethinking Feature Extraction.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Rethinking Feature Extraction: Gradient-Based Localized Feature Extraction for End-To-End Surgical Downstream Tasks. <br>
-									Winnie Pang*, Mobarakol Islam*, Sai Mitheran, <b>Lalithkumar Seenivasan</b>, Mengya Xu and Hongliang Ren. <br>
-									<em>IEEE Robotics and Automation Letters & IEEE International Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2023.
-									<p>
-									[<a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf" target="_blank">preprint</a>]
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="./paper_photos/TA_MTL.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3>Task-aware asynchronous multi-task model <br> with class incremental contrastive learning <br> for surgical scene understanding. </h3>
+								<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Mengya Xu, <br> Chwee Ming Lim and Hongliang Ren. <br>
+								<em>International Journal of Computer Assisted Radiology <br> and Surgery</em> (<i><b>IJCARS</b></i>), 2023. <br>
+								[<a href="https://arxiv.org/pdf/2211.15327.pdf" target="_blank">preprint</a>]
+								[<a href="https://github.com/lalithjets/Domain-adaptation-in-MTL" target="_blank">code</a>]
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="./paper_photos/Rethinking Feature Extraction.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3>Rethinking Feature Extraction: Gradient-Based <br> Localized Feature Extraction for End-To-End <br> Surgical Downstream Tasks. </h3>
+								Winnie Pang*, Mobarakol Islam*, Sai Mitheran, <br> <b>Lalithkumar Seenivasan</b>, Mengya Xu and Hongliang Ren. <br>
+								<em>IEEE Robotics and Automation Letters & IEEE International <br> Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2023.<br>
+								[<a href="https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf" target="_blank">preprint</a>]
 									[<a href="https://github.com/PangWinnie0219/GradCAMDownstreamTask" target="_blank">code</a>]
-									<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-									<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-
-							<tr>
-								<td width="230">
-									<img src="./paper_photos/Surgical_VQA.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Surgical-VQA: Visual Question Answering in Surgical Scenes Using Transformer. <br>
-									<b>Lalithkumar Seenivasan*</b>, Mobarakol Islam*, Adithya K. Krishna and Hongliang Ren. <br>
-									<em>Medical Image Computing and Computer-Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2022.
-									<p>
-									[<a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">preprint</a>]
+							</td>
+						</table>
+					</div>
+					
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="./paper_photos/Surgical_VQA.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Surgical-VQA: Visual Question <br> Answering in Surgical Scenes <br> Using Transformer. </h3>
+								<b>Lalithkumar Seenivasan*</b>, Mobarakol Islam*, <br> Adithya K. Krishna and Hongliang Ren. <br>
+								<em>Medical Image Computing and Computer-Assisted <br> Intervention</em> (<i><b>MICCAI</b></i>), 2022. <br>
+								[<a href="https://arxiv.org/pdf/2206.11053.pdf" target="_blank">preprint</a>]
 									[<a href="https://github.com/lalithjets/Surgical_VQA" target="_blank">code</a>]
 									[<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>] 
 									[<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>] 
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+							</td>
+						</table>
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="paper_photos/biomimetic.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Biomimetic Incremental Domain Generalization with a Graph Network for Surgical Scene Understanding. <br>
-									<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Chi-Fai Ng, Chwee Ming Lim and Hongliang Ren. <br>
-									<em>MDPI Biomimetics Journal</em> (<i><b>Biomimetics</b></i>), 2022.  <br> 
-									<p>
-										[<a href="https://www.mdpi.com/2313-7673/7/2/68" target="_blank">preprint</a>]
-										[<a href="https://github.com/lalithjets/Domain-Generalization-for-Surgical-Scene-Graph" target="_blank">code</a>]  
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/biomimetic.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Biomimetic Incremental Domain Generalization <br> with a Graph Network for <br> Surgical Scene Understanding. </h3>
+								<b>Lalithkumar Seenivasan</b>, Mobarakol Islam, Chi-Fai Ng, <br> Chwee Ming Lim and Hongliang Ren. <br>
+								<em>MDPI Biomimetics Journal</em> <br> (<i><b>Biomimetics</b></i>), 2022.  <br>
+								[<a href="https://www.mdpi.com/2313-7673/7/2/68" target="_blank">preprint</a>]
+								[<a href="https://github.com/lalithjets/Domain-Generalization-for-Surgical-Scene-Graph" target="_blank">code</a>]
+							</td>
+						</table>
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="./paper_photos/Global-Reasoned_Multi-Task_Learning.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>		
-								<td align="justify"> 
-									Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding. <br>
-									<b>Lalithkumar Seenivasan</b>, Sai Mitheran, Mobarakol Islam and Hongliang Ren. <br>
-									<em>IEEE Robotics and Automation Letters & IEEE International Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2022.
-									<p>
-									[<a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">preprint</a>][<a href="https://github.com/lalithjets/Global-reasoned-multi-task-model" target="_blank">code</a>]
-									[<a href="https://drive.google.com/file/d/1deAY5ThZRm9Y3AFX3ArIvde-LdE8imfx/view?usp=sharing" target="_blank">poster</a>]
-									[<a href="https://youtu.be/UOIcp3y4o1U" target="_blank">video</a>] 
-									</p>	
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							
-							<tr>
-								<td width="230">
-									<img src="paper_photos/PetRAW.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									PEg TRAnsfer Workflow Recognition Challenge Report: Do Multi-Modal Data Improve Recognition?. <br>
-									Arnaud Huaulmé, et. al, ...... <b>Lalithkumar Seenivasan</b> and Pierre Jannin. <br>
-									<em>EndoVis21 Challenge, Medical Image Computing and Computer Assisted Intervention</em> (<i><b>Challenge, MICCAI</b></i>), 2021.  <br> 
-									<p>
-										[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088403" target="_blank">preprint</a>]
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							
-							<tr>
-								<td width="230">
-									<img src="paper_photos/CholecTripLet.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									CholecTriplet2021: A benchmark challenge for surgical action triplet recognition. <br>
-									Chinedu Innocent Nwoye, et. al, ...... <b>Lalithkumar Seenivasan</b> and Nicolas Padoy. <br>
-									<em>EndoVis21 Challenge, Medical Image Computing and Computer Assisted Intervention</em> (<i><b>Challenge, MICCAI</b></i>), 2021.  <br> 
-									<p>
-										[<a href="https://arxiv.org/pdf/2204.04746.pdf" target="_blank">preprint</a>]
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="./paper_photos/Global-Reasoned_Multi-Task_Learning.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Global-Reasoned Multi-Task <br> Learning Model for <br> Surgical Scene Understanding. </h3>
+								<b>Lalithkumar Seenivasan*</b>, Sai Mitheran*, <br> Mobarakol Islam and Hongliang Ren. <br>
+								<em>IEEE Robotics and Automation Letters & IEEE International <br> Conference on Robotics and Automation</em> (<i><b>RA-L & ICRA</b></i>), 2022. <br>
+								[<a href="https://arxiv.org/pdf/2201.11957.pdf" target="_blank">preprint</a>][<a href="https://github.com/lalithjets/Global-reasoned-multi-task-model" target="_blank">code</a>]
+								[<a href="https://drive.google.com/file/d/1deAY5ThZRm9Y3AFX3ArIvde-LdE8imfx/view?usp=sharing" target="_blank">poster</a>]
+								[<a href="https://youtu.be/UOIcp3y4o1U" target="_blank">video</a>] 
+							</td>
+						</table>
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="paper_photos/cda.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Class-Distribution-Aware Calibration for Long-Tailed Visual Recognition. <br>
-									Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, Hongliang Ren and Ben Glocker. <br>
-									<em>UDL Workshop, International Conference on Machine Learning</em> (<i><b>UDL , ICML</b></i>), 2021.  <br> 
-									<p>
-										[<a href="https://arxiv.org/pdf/2109.05263.pdf" target="_blank">preprint</a>]
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							
-							<tr>
-								<td width="230">
-									<img src="paper_photos/ScoopNet.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									ScoopNet: 6DOF Pose Estimation pipeline for Origami-inspired Worm Robots. <br>
-									Rohit Lal, Ruphan Swaminathan, <b>Lalithkumar Seenivasan</b>, Liang Qiu and Hongliang Ren. <br>
-									<em>IEEE International Conference on Development and Learning</em> (<i><b>ICDL</b></i>), 2021.  <br> 
-									<p>
-										[<a href="https://www.researchgate.net/profile/Liang-Qiu-7/publication/354075045_ScoopNet_6DOF_Pose_Estimation_pipeline_for_Origami-inspired_Worm_Robots/links/62ac796923f3283e3aef5d29/ScoopNet-6DOF-Pose-Estimation-pipeline-for-Origami-inspired-Worm-Robots.pdf" target="_blank">preprint</a>]
-										[<a href="https://github.com/take2rohit/scoop_net" target="_blank">code</a>]  
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/PetRAW.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> PEg TRAnsfer Workflow Recognition <br> Challenge Report: Do Multi-Modal <br> Data Improve Recognition?. </h3>
+								Arnaud Huaulmé, et. al, ...... <br> <b>Lalithkumar Seenivasan</b> and Pierre Jannin. <br>
+								<em>EndoVis21 Challenge, Medical Image Computing <br> and Computer Assisted Intervention</em> (<i><b>Challenge, MICCAI</b></i>), 2021.  <br> 
+								[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088403" target="_blank">preprint</a>]
+							</td>
+						</table>						
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="paper_photos/shape_Tracking.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Shape Tracking of Flexible Morphing Matters From Depth Images. <br>
-									<b>Lalithkumar Seenivasan</b>, Fan Bai, Ming Ji, Xiaoyi Gu, Zion Tsz Ho Tse and Hongliang Ren. <br>
-									<em>IEEE Sensors Journal</em>, 2021.  <br> 
-									<p>
-										[<a href="https://ieeexplore.ieee.org/abstract/document/9262941/" target="_blank">preprint</a>]
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							
-							<tr>
-								<td width="230">
-									<img src="paper_photos/StentNet.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Stent Deployment Detection Using Radio Frequency‐Based Sensor and Convolutional Neural Networks. <br>
-									Mengya Xu*, <b>Lalithkumar Seenivasan*</b>, Leonard Leong Litt Yeo and Hongliang Ren. <br>
-									<em>Advanced Intelligent Systems</em> (<i><b>Adv. Intell. Syst.</b></i>), 2020.  <br> 
-									<p>
-										[<a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202000092" target="_blank">preprint</a>]
-										[<a href="https://github.com/XuMengyaAmy/StentDeploymentDetectionWithStentNet" target="_blank">code</a>]  
-									</p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							
-							<tr>
-								<td width="230">
-									<img src="paper_photos/Learning_Reasoning_Surgical_Graph.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Learning and Reasoning with the Graph Structure Representation in Robotic Surgery. <br>
-									Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, Lim Chwee Ming and Hongliang Ren. <br>
-									<em>Medical Image Computing and Computer Assisted Intervention</em> (<i><b>MICCAI</b></i>), 2020.  <br> 
-									<p>[<a href="https://arxiv.org/pdf/2007.03357.pdf" target="_blank">preprint</a>]
-										[<a href="https://github.com/mobarakol/Surgical_SceneGraph_Generation" target="_blank">code</a>]  </p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/CholecTripLet.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> CholecTriplet2021: A benchmark <br> challenge for surgical action <br> triplet recognition. </h3>
+								Chinedu Innocent Nwoye, et. al, ...... <br> <b>Lalithkumar Seenivasan</b> and Nicolas Padoy. <br>
+								<em>EndoVis21 Challenge, Medical Image Computing <br> and Computer Assisted Intervention</em> (<i><b>Challenge, MICCAI</b></i>), 2021.  <br> 
+								[<a href="https://arxiv.org/pdf/2204.04746.pdf" target="_blank">preprint</a>]
+							</td>
+						</table>
+					</div>
 
-							<tr>
-								<td width="230">
-									<img src="paper_photos/Pilot_study.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-								</td>
-								<td align="justify"> 
-									Pilot Study and Design Conceptualization for a Slim Single-port Surgical Manipulator with 
-									Spring Backbones and Catheter-size Channels. <br>
-									Hongliang Ren, Cai Xin Chen, Catherine Cai, Krishna Ramachandra and <b>Lalithkumar Seenivasan</b>.<br>
-									<em>IEEE International Conference on Information and Automation</em> (<i><b>ICIA</b></i>), 2017.  <br> 
-									<p>[<a href="https://d1wqtxts1xzle7.cloudfront.net/60791984/IEEE_EG330120191003-28729-olwc41-libre.pdf?1570169551=&response-content-disposition=inline%3B+filename%3DPilot_Study_and_Design_Conceptualization.pdf&Expires=1676488988&Signature=aRqZ0eQ86e90tOu0xDDuaXswjMy6-G4oaWJrSObIsjEsArlEMbkqAyKyGy7jy5bjhdenfZ03zX3levTPYb7glvkoyuvT~XUxGOfObOc0Jn3nQ6UHW8LOqmeRNUXKZSkZToqS5Ek3DNHjkyMv66ge7SEYetnN0IW7POaNTM1-Flk9PERABzYKMUy6jHOvhJRBNzW9wisbgkdUWhigJ7PNiG3S0zP4XgPd268~keozPXJGo5mkSeI3A-zMGd3eHiTJzdaxoU4EmahLsEY-T-He7X~DACt~vcCxiYj5EJ54AsXKk9SIOL9JJmIb2fXJ9VBkpMhIefLbvq2uNb21Fv4LRA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
-										target="_blank">preprint</a>]  </p>
-								</td>
-							</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-							<tr>&nbsp</tr>
-						</tbody>
-					</table>
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/cda.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Class-Distribution-Aware <br> Calibration for Long-Tailed <br> Visual Recognition. </h3>
+								Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, <br> Hongliang Ren and Ben Glocker. <br>
+								<em>UDL Workshop, International Conference on <br> Machine Learning</em> (<i><b>UDL , ICML</b></i>), 2021.  <br> 
+								[<a href="https://arxiv.org/pdf/2109.05263.pdf" target="_blank">preprint</a>]
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/ScoopNet.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3>ScoopNet: 6DOF Pose Estimation <br> pipeline for Origami-inspired <br> Worm Robots. </h3>
+								Rohit Lal, Ruphan Swaminathan, <b>Lalithkumar Seenivasan</b>, <br> Liang Qiu and Hongliang Ren. <br>
+								<em>IEEE International Conference on Development  <br> and Learning</em> (<i><b>ICDL</b></i>), 2021.  <br> 
+								[<a href="https://www.researchgate.net/profile/Liang-Qiu-7/publication/354075045_ScoopNet_6DOF_Pose_Estimation_pipeline_for_Origami-inspired_Worm_Robots/links/62ac796923f3283e3aef5d29/ScoopNet-6DOF-Pose-Estimation-pipeline-for-Origami-inspired-Worm-Robots.pdf" target="_blank">preprint</a>]
+								[<a href="https://github.com/take2rohit/scoop_net" target="_blank">code</a>]  
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/shape_Tracking.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3>Shape Tracking of Flexible <br> Morphing Matters From <br> Depth Images. </h3> 
+								<b>Lalithkumar Seenivasan</b>, Fan Bai, Ming Ji, Xiaoyi Gu, <br> Zion Tsz Ho Tse and Hongliang Ren. <br>
+								<em>IEEE Sensors Journal</em>, 2021.  <br> <br>
+								[<a href="https://ieeexplore.ieee.org/abstract/document/9262941/" target="_blank">preprint</a>]
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/StentNet.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Stent Deployment Detection Using <br> Radio Frequency-Based Sensor <br> and Convolutional Neural Networks. </h3>
+								Mengya Xu*, <b>Lalithkumar Seenivasan*</b>, <br> Leonard Leong Litt Yeo and Hongliang Ren. <br>
+								<em>Advanced Intelligent Systems</em> (<i> <br> <b>Adv. Intell. Syst.</b></i>), 2020.  <br> 
+								[<a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202000092" target="_blank">preprint</a>]
+								[<a href="https://github.com/XuMengyaAmy/StentDeploymentDetectionWithStentNet" target="_blank">code</a>]  
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/Learning_Reasoning_Surgical_Graph.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Learning and Reasoning with <br> the Graph Structure Representation <br> in Robotic Surgery. </h3>
+								Mobarakol Islam, <b>Lalithkumar Seenivasan</b>, <br> Lim Chwee Ming and Hongliang Ren. <br>
+								<em>Medical Image Computing and Computer Assisted <br> Intervention</em> (<i><b>MICCAI</b></i>), 2020.  <br> 
+								[<a href="https://arxiv.org/pdf/2007.03357.pdf" target="_blank">preprint</a>]
+								[<a href="https://github.com/mobarakol/Surgical_SceneGraph_Generation" target="_blank">code</a>]
+							</td>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<td>
+								<img src="paper_photos/Pilot_study.png" class = "publications-img-tile">
+							</td>
+							<td class ="publications-caption"> 
+								<h3> Pilot Study and Design Conceptualization for a <br> Slim Single-port Surgical Manipulator with <br> Spring Backbones and Catheter-size Channels. </h3>
+								Hongliang Ren, Cai Xin Chen, Catherine Cai, <br> Krishna Ramachandra and <b>Lalithkumar Seenivasan</b>.<br>
+								<em>IEEE International Conference on Information and Automation</em> (<i><b>ICIA</b></i>), 2017.  <br> 
+								[<a href="https://d1wqtxts1xzle7.cloudfront.net/60791984/IEEE_EG330120191003-28729-olwc41-libre.pdf?1570169551=&response-content-disposition=inline%3B+filename%3DPilot_Study_and_Design_Conceptualization.pdf&Expires=1676488988&Signature=aRqZ0eQ86e90tOu0xDDuaXswjMy6-G4oaWJrSObIsjEsArlEMbkqAyKyGy7jy5bjhdenfZ03zX3levTPYb7glvkoyuvT~XUxGOfObOc0Jn3nQ6UHW8LOqmeRNUXKZSkZToqS5Ek3DNHjkyMv66ge7SEYetnN0IW7POaNTM1-Flk9PERABzYKMUy6jHOvhJRBNzW9wisbgkdUWhigJ7PNiG3S0zP4XgPd268~keozPXJGo5mkSeI3A-zMGd3eHiTJzdaxoU4EmahLsEY-T-He7X~DACt~vcCxiYj5EJ54AsXKk9SIOL9JJmIb2fXJ9VBkpMhIefLbvq2uNb21Fv4LRA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+									target="_blank">preprint</a>]
+							</td>
+						</table>
+					</div>
 				</div>
-				<h2><img src="./pic/book.png" height="22px" style="margin-bottom:-4px"> &nbsp Book Chapter Publications</h2>
-				
-				<table id="bcPublications" width="100%">
-					<tbody>
-
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/untethered_soft_ferromagnetic.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Untethered Soft Ferromagnetic Quad-Jaws Cootie Catcher with Selectively Coupled Degrees of Freedom. <br>
-								Xinchen Cai, Catherine Jiayi Cai, <b>Lalithkumar Seenivasan</b>, Zion Tse and Hongliang Ren. <br>
-								<em>Deployable Multimodal Machine Intelligence: Applications in Biomedical Engineering</em>, <i><b>Springer Nature Singapore</b></i>, 2023.
-								<p>
-								[<a href="https://link.springer.com/chapter/10.1007/978-981-19-5932-5_13" target="_blank">preprint</a>] 
-
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/tendon_routing.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Tendon routing and anchoring for cable-driven single-port surgical manipulators 
-								with spring backbones and luminal constraints. <br>
-								<b>Lalithkumar Seenivasan</b>, Xinchen Cai, Krishna Ramachandra, Francis Wong and Hongliang Ren. <br>
-								<em>Flexible Robotics in Medicine: A Design Journey of Motion Generation Mechanisms 
-									and Biorobotic System Development</em>, <i><b>Academic Press</b></i>, 2020.
-								<p>
-								[<a href="https://books.google.com.sg/books?hl=en&lr=&id=1WnnDwAAQBAJ&oi=fnd&pg=PA169&dq=info:S14J972tDtcJ:scholar.google.com&ots=L-9uPEaSLm&sig=UN07TG90nE0A6uLshB_Ram-BgRw&redir_esc=y#v=onepage&q&f=false" target="_blank">preprint</a>]
-								<!-- [<a href="https://github.com/lalithjets/Domain-adaptation-in-MTL" target="_blank">code</a>] -->
-								<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-								<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-				
-						<tr>
-							<td width="230">
-								<img src="./paper_photos/tunable_stiffness.png" width="220px" height="130px" style="border: 2px solid #316b80; box-shadow: 4px 4px 5px #9ecce5">
-							</td>
-							<td align="justify"> 
-								Tunable stiffness using negative Poisson's ratio toward load-bearing continuum tubular mechanisms in medical robotics. <br>
-								Krishna Ramachandra, Catherine Jiayi Cai, <b>Lalithkumar Seenivasan</b>, Xinchen Cai, Zion Tszho Tse and Hongliang Ren. <br>
-								<em>Control Theory in Biomedical Engineering</em>, <i><b>Academic Press</b></i>, 2020.
-								<p>
-								[<a href="https://www.sciencedirect.com/science/article/pii/B9780128213506000123" target="_blank">preprint</a>]
-								<!-- [<a href="https://drive.google.com/file/d/19RYYjkokXWv5j_Wayjkc6bEKjSXdzaNB/view?usp=sharing" target="_blank">poster</a>]  -->
-								<!-- [<a href="https://youtu.be/4Db8NSEW-FY" target="_blank">video</a>]  -->
-								</p>
-							</td>
-						</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-						<tr>&nbsp</tr>
-
-					</tbody>
-				</table>
-				
-				<div id="footer">
-					<div id="footer-text"></div>
-				</div>
-					
-				<p>
-				<center>
-					&copy; Seenivasan Lalithkumar | Last updated: Feb 2023
-				</center>
-				</p>
 			</div>
+
+			<div id="book-publication" class="subheading">
+				<h2>	<img src="./pic/book.png" class="hicon" style="border-radius: 10px;"/> <u>Book Publications</u></h2>
+	
+				<div id="book-publication-list">
+					<div class="publicationstiles publicationstile">
+						<table>
+							<tr>
+								<td>
+									<img src="./paper_photos/untethered_soft_ferromagnetic.png" class = "publications-img-tile">
+								</td>
+								<td class ="publications-caption"> 
+									<h3> Untethered Soft Ferromagnetic <br> Quad-Jaws Cootie Catcher with Selectively <br> Coupled Degrees of Freedom. </h3>
+									Xinchen Cai, Catherine Jiayi Cai, <b>Lalithkumar Seenivasan</b>, <br> Zion Tse and Hongliang Ren. <br>
+									<em>Deployable Multimodal Machine Intelligence: <br> </b>Applications in Biomedical Engineering</em>, <i><b>Springer Nature Singapore</b></i>, 2023. <br>
+									[<a href="https://link.springer.com/chapter/10.1007/978-981-19-5932-5_13" target="_blank">preprint</a>] 
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<tr>
+								<td>
+									<img src="./paper_photos/tendon_routing.png" class = "publications-img-tile">
+								</td>
+								<td class ="publications-caption"> 
+									<h3>Tendon routing and anchoring for cable-driven <br> single-port surgical manipulators with spring <br> backbones and luminal constraints. </h3>
+									<b>Lalithkumar Seenivasan</b>, Xinchen Cai, Krishna Ramachandra, <br> Francis Wong and Hongliang Ren. <br>
+									<em>Flexible Robotics in Medicine: A Design Journey of Motion <br> Generation Mechanisms and Biorobotic System Development</em>, <i><b>Academic Press</b></i>, 2020. <br>
+									[<a href="https://books.google.com.sg/books?hl=en&lr=&id=1WnnDwAAQBAJ&oi=fnd&pg=PA169&dq=info:S14J972tDtcJ:scholar.google.com&ots=L-9uPEaSLm&sig=UN07TG90nE0A6uLshB_Ram-BgRw&redir_esc=y#v=onepage&q&f=false" target="_blank">preprint</a>]
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="publicationstiles publicationstile">
+						<table>
+							<tr>
+								<td>
+									<img src="./paper_photos/tunable_stiffness.png" class = "publications-img-tile">
+								</td>
+								<td class ="publications-caption"> 
+									<h3> Tunable stiffness using negative Poisson's <br> ratio toward load-bearing continuum tubular <br> mechanisms in medical robotics. </h3>
+									Krishna Ramachandra, Catherine Jiayi Cai, <b>Lalithkumar Seenivasan</b>, <br> Xinchen Cai, Zion Tszho Tse and Hongliang Ren. <br>
+									<em>Control Theory in Biomedical Engineering</em>, <br> <i><b>Academic Press</b></i>, 2020. <br>
+									[<a href="https://www.sciencedirect.com/science/article/pii/B9780128213506000123" target="_blank">preprint</a>]
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+					
+			<div id="footer" class="subheading">	
+				<h3> &copy; Seenivasan Lalithkumar | Last updated: March 2023 </h3>
+			</div>
+		</div>
 			  
-			<div id="Resume" class="tabcontent">
-				<h2><img src="./pic/biography.png" height="22px" style="margin-bottom:-4px"> &nbsp Resume </h2>
-				<!-- <center>
-					<img src="./resume/Seenivasan_lalithkumar_resume_pg_1.png" width="98%" style="border: 2px solid #20357b">
+		<div id="Resume" class="tabscontent">
+			<h2><img src="./pic/biography.png" height="22px" style="margin-bottom:-4px"> &nbsp Resume </h2>
+				
+			<!-- <center>
+				<img src="./resume/Seenivasan_lalithkumar_resume_pg_1.png" width="98%" style="border: 2px solid #20357b">
 				</center>
 				<center>
 					<img src="./resume/Seenivasan_lalithkumar_resume_pg_2.png" width="98%" style="border: 2px solid #20357b">
 				</center> -->
-				<center>
-					<a href="https://github.com/lalithjets/lalithjets.github.io/blob/master/resume/Seenivasan_lalithkumar_resume.pdf"> (<u>Full PDF</u>)</a>
-				</center>
-				<div style="height: 2300px;">
-					<!-- <embed src="./resume/Seenivasan_lalithkumar_resume.pdf" width="100%" height="2350px" />	 -->
-					<iframe src="https://docs.google.com/gview?url=https://github.com/lalithjets/lalithjets.github.io/raw/master/resume/Seenivasan_lalithkumar_resume.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>	
-				</div>
+			<center>
+				<a href="https://github.com/lalithjets/lalithjets.github.io/blob/master/resume/Seenivasan_lalithkumar_resume.pdf"> (<u>Full PDF</u>)</a>
+			</center>
+			<div style="height: 2300px;">
+				<!-- <embed src="./resume/Seenivasan_lalithkumar_resume.pdf" width="100%" height="2350px" />	 -->
+				<iframe src="https://docs.google.com/gview?url=https://github.com/lalithjets/lalithjets.github.io/raw/master/resume/Seenivasan_lalithkumar_resume.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>	
+			</div>
 				
 				
-				<div id="footer">
-					<div id="footer-text"></div>
-				</div>
-					
-				<p>
-				<center>
-					&copy; Seenivasan Lalithkumar | Last updated: Feb 2023
-				</center>
-				</p>
+			<div id="footer" class="subheading">	
+				<h3> &copy; Seenivasan Lalithkumar | Last updated: March 2023 </h3>
 			</div>
 
+			<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 			<script src="opentab.js" type="text/javascript"></script>
-
 		</div>
 		
 

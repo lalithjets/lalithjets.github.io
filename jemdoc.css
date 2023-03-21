@@ -1,77 +1,539 @@
-/* Default css file for jemdoc. */
+/* Full html and page layout */
 html {
-  background-color: #eeeeee; 
+  background-color: #ffffff; 
+
 }
 
-table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
+body { 
+  font-family: Georgia, serif;
+  color: #000;
+  background-color: #ffffff; 
+  text-align:left;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  /* margin-bottom: 0px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* padding-left:  50px; */
+  /* padding-right: 50px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 30px; */
+  /* max-width: auto; 960px */
 }
-/*
-body {
-	background: white;
-	padding-bottom: 8px;
-	margin: 0;
-}
-*/
 
-/* ---------------------------------------------------------------------- */
-/* Style the tab */
-.tab {
+/* ------------ name card ----------------- */
+body#namecard {
+	width: auto;
+	background-color:#ffffff;
+	margin-bottom: 30px;
+}
+
+div#namecardtop {
+	height: 150px;
+	width: 100%;
+	background-color: 	#feffe7;
+	/* background-color: #BAD7e9; */
+}
+
+div#namecardbottom {
+	height:250px;
+	width: 100%;
+	/* background-color: 	#86c8bc; */
+	/* background-color: #6096b4; */
+	background-color: #4e6e81;
+	text-align: center;	
+}
+
+div#namecardimg { 							/* p for namecard */
+	position: relative;
+	bottom: 120px;
+	display: flex;
+    justify-content: center;
+	right: 220px;
+}
+
+div#namecardtext { 							/* p for namecard */
+	position:relative;
+	text-align: center;
+	bottom: 340px;
+	left: 220px;
+}
+
+div#namecardbottom h1 { 					/* p for namecard */
+	font-family: Bradley Hand;
+	font-size: 34px;
+	color: #ffffff;
+	/* color: #16213e; */
+	/* color: #ffffd0; */
+	margin-top: 0px;
+	margin-bottom: 0%;
+	border-bottom: none;
+}
+
+div#namecardbottom p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+	/* color: #ffffd0; */
+	color: #ffffff;
+	 /*#243763; */
+}
+
+div#namecardbottom a { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+	/* color: #ffffd0; */
+	color: #ffffff;
+	/* #243763; */
+}
+
+
+img.namecard {
+	height: 340px;
+	width: 35%;
+	max-width: 300px;
+	min-width: 200px;
+	display: block;
+	/* box-shadow: 2px 2px 4px #16213e; */
+	/* border: 2px solid #002b5b; */
+	box-shadow: 2px 2px 5px #002b5b;
+}
+
+img.icon {
+	height:30px;
+	margin-bottom:-3px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border: 3px solid #16213e;
+}
+
+/* -------------------- Button ------------------------ */
+.buttontab {										/* Tab button format */
+	text-align: center;
 	overflow: hidden;
-	border: 1px solid white;
-	/* border-bottom: 2px solid #20357b; */
-	/* background-color: inherit; */
-	background-color: white;
-  }
-  
-  /* Style the buttons inside the tab */
-  .button {
+	/* background-color: #86c8bc; */
+	background-color: #4e6e81;
+	border-bottom: 2px solid #094749;
+}
+
+.button {										  	/* Style the buttons inside the tab */
 	font-weight: bold;
-	font-family: Georgia, serif;
-	background-color: #93BFCF;
+	font-family: Tahoma;
+	background-color: transparent;
 	float: center;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 10px 10px;
-	transition: 0.3s;
-	font-size: 16px;
-	/* border-top-right-radius: 20px; */
-	/* border-bottom-right-radius: 20px; */
-	/* border-radius: 20px; */
-  }
-  
-  /* Change background color of buttons on hover */
-  .button:hover {
-	background-color: #93BFCF;
-	padding: 12px 15px;
+	padding: 15px 15px;
+	transition: 0.2s;
 	font-size: 20px;
-	border-radius: 20px;
-	border: 2px solid #316b80;
-  }
-  
-  /* Create an active/current tablink class */
-  .button.active {
-	background-color: #93BFCF;
-	padding: 15px 20px;
-	font-size: 24px;
-	border-radius: 20px;
-	border: 3px solid #316b80;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-	display: none;
-	padding: 1px 1px;
-	/* border: 1px solid #ccc; */
-	border-top: none;
-  }
+	color: #ffffff;
+}
 
+
+.button:hover {										/* Change background color of buttons on hover */
+	background-color: transparent;
+	font-size: 22px;
+}
   
-/* ---------------------------------------------------------------------- */
-.shape {
+.button.active {									/* Create an active/current tablink class */
+	background-color: #30475e;
+	font-size: 24px;
+	border-top: 2px solid #313552;
+	border-left: 2px solid #313552;
+	border-right: 2px solid #313552;
+	border-top-right-radius:10px ;
+	border-top-left-radius:10px ;
+}
+
+/* ------------- tabs content */
+.tabscontent {
+    text-align: left;
+    vertical-align: middle;
+	border: none;
+    background: #ffffff;
+	display: none;
+}
+
+.subheading h2{						/* common subheading format */
+	font-size: 25px;
+	font-family: cursive;
+	text-align: center;
+	color: #002b5b;
+}
+
+div#biography{
+	font-size: 22px;
+	font-family: Lucida;
+	text-align: justify ;
+	/* margin: 50px; */
+	padding-top:10px;
+	padding-left: 50px;
+	padding-right:50px;
+	padding-bottom: 10px;
+	/* background-color:#Ecf9ff ; */
+	margin-top:0px;
+
+}
+
+img.hicon {
+	height:35px;
+	margin-bottom:-8px;
+}
+
+
+div#newfeeds{
+	background-color: #eeeeee;
+	/* background-color: #def5e5; */
+	padding-top: 2px;
+	padding-bottom:20px; 
+	
+	/* margin-right:25px; */
+	padding:25px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 280px;
+
+  white-space: nowrap;
+  /* vertical-align: middle; */
+}
+.scrolling-wrapper::-webkit-scrollbar {
+	display:none;
+}
+
+
+.card {
+	vertical-align: middle;
+    display: inline-block;
+	margin-left: 25px;
+	height: 240px;
+	width: 220px;
+	border-radius: 15px;
+	/* background-color: #def5e5; */
+	background-color: #fffbeb;
+	box-shadow: 4px 4px 5px #2e4f4f;
+	border: 2px solid #2e4f4f;
+}
+
+.card h2{
+	padding-top:10px;
+	font-size: 20px;
+	font-family: Lucida;
+	text-align: center;
+	margin: 0px;
+	color: #002b5b;
+}
+.card h3{
+	font-size: 20px;
+	font-family: Lucida;
+	text-align: center;
+	margin: 0px;
+	color: #002b5b;
+}
+
+.card p{
+	font-size: 16px;
+	font-family: lucida;
+	text-align: justify;
+	word-break:keep-all;
+    white-space: normal;
+	padding: 10px;
+	margin: 0px;
+	line-height: 1.2;
+}
+
+
+div#Key-Publications {
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.keypublicationtiles {
+	display: inline-block;
+	width: 25%;
+	min-width: 420px;
+	height: auto;
+	margin: 10px;
+}
+
+.keypublicationtile {
+	vertical-align: middle;
+	border: 2px solid #002b5b;
+	box-shadow: 2px 2px 5px #002b5b;
+	border-radius: 10px;
+}
+
+img.key-pub-title {
+	padding-top: 4px;
+	width:95%;
+	aspect-ratio: 16/9;
+}
+
+div#key-pub-tile-caption p{
+	font-size: 14px;
+	/* font-size: 1.0vw; */
+	border-top:2px solid #316b80;
+}
+
+
+div#dataset{
+	background-color: #eeeeee;
+	text-align: center;	
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.datasettiles {
+	display: inline-block;
+	width: 45%;
+	min-width: 320px;
+	max-width: 350px;
+	height: auto;
+	margin: 10px;
+}
+
+.datasettile {
+	background-color: #fffbeb;
+	vertical-align: middle;
+	border: 5px solid #0f3460;
+	box-shadow: 2px 2px 5px #647e78;
+	border-radius: 20px;
+}
+
+.datasettile h2 {
+	font-family: monospace;
+}
+
+
+
+div#awards{
+	text-align: center;	
+	padding-bottom: 50px;
+}
+
+.awardtiles {
+	display: inline-block;
+	width: 45%;
+	min-width: 320px;
+	max-width: 400px;
+	height: auto;
+	margin: 10px;
+}
+
+.awardtile {
+	vertical-align: middle;
+}
+
+div#award-tile-caption{
+	border-top: 5px solid #002b5b;
+	border-bottom: 5px solid #002b5b;
+	padding: 5px;
+}
+
+img.award-title {
+	width:50%;
+	border-radius: 30px;
+	background-color: #eeeeee;
+	box-shadow: 2px 2px 5px #002b5b;
+	margin: 10px;
+}
+
+
+div#award-tile-caption h2{
+	padding: 0px;
+	margin: 0px;
+	font-family: monospace;
+}
+
+div#award-tile-caption h3{
+	padding:0px;
+	margin:0px;
+	font-family: monospace;
+}
+
+div#talks {
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.talktiles {
+	display: inline-block;
+	width: 25%;
+	min-width: 430px;
+	height: auto;
+	margin: 10px;
+}
+
+.talktile {
+	vertical-align: middle;
+}
+
+img.talk-title {
+	width:95%;
+	aspect-ratio: 16/9;
+	/* border: 2px solid #000; */
+	box-shadow: 2px 2px 5px #2e4f4f;
+}
+
+div#talk-tile-caption{
+	margin:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #fffbeb;
+	border-top: 4px solid #2e4f4f;
+	box-shadow: 2px 2px 5px #2e4f4f;	
+}
+
+div#academic-services{
+	text-align: center;
+}
+
+
+  /* -------------------- ChartJS graph ------------------------ */
+div#publication-charts{
+	text-align: center;	
+	padding: 50px;
+	background-color: #eeeeee;
+}
+
+.publication-chart {								/*  chartJS properties */
+	margin: 10px;
+	display: inline-block;
+	/* display: grid; */
+	/* grid-template-columns: 1fr 1fr; */
+	width: 42%;
+	height: 250px;
+	/* margin: 0 auto; */
+}
+
+.publication-chart #conference_chart,
+.publication-chart #journal_chart
+ {
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;	
+}
+
+.canvasjs-chart-credit {
+	display: none !important;
+}
+
+
+ /* -------------------- ChartJS graph ------------------------ */
+div#conf-journal-publication{
+	padding: 20px;
+}
+
+
+div#conf-journal-publication-list{
+	text-align: center;	
+	padding-bottom: 20px;
+}
+
+.publicationstiles {
+	margin: 10px;
+	display: inline-block;
+	width: 45%;
+	min-width: 800px;
+	/* max-width: 400px; */
+	height: auto;
+}
+
+.publicationstile {
+	background-color: #ffffff;
+	padding: 10px;
+	vertical-align: middle;
+	border: 2px solid #316b80; 
+	border-radius: 20px;
+	box-shadow: 4px 4px 5px #9ecce5;	
+}
+
+img.publications-img-tile{
+	width:350px; 
+	height:200px;
+	border: 2px solid #000	; 
+	box-shadow: 4px 4px 5px #9ecce5;
+}
+
+td.publications-caption {
+	/* padding: 10px; */
+	width: 100%;
+	/* background-color: #0e8388; */
+	text-align: center;
+}
+
+div #book-publication{
+	padding: 20px;
+	background-color: #eeeeee;
+}
+div#book-publication-list{
+	text-align: center;	
+	padding-bottom: 20px;
+}
+
+/* ------------ all content layout -------------------- */
+#page-content {	
+    text-align: left;
+    vertical-align: middle;
+	border: none;
+    background: #ffffff;
+}
+
+/* ------------- Font Format ---------------------- */
+h1, h2 {									/* all heading */
+	color: #316b80;
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
+	padding-top: 2px;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	/* border-bottom: 2px solid #a5c9ca; */
+}
+
+h1 {										/* Heading 1 */
+	font-size: 165%;
+	padding-bottom: 0.3em;
+}
+
+h2 {										/* Heading 2 */
+	padding-top: 0.1em;
+	font-size: 125%;
+}
+
+p {											/* paragraph */
+	margin-top: 0.0em;					
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.2;
+}
+
+em {										/* Font italic */
+	font-style: italic;
+}
+
+a {											/* hyperlink */
+	color: #224b8d;
+	text-decoration: none;
+}
+
+a:hover {									/* hyperlink hover */
+	border-bottom: 1px gray dotted;
+}
+
+
+
+/* ------------------ Main Id card -------------------- */
+/* .idshape {
 	height: 100%;
 	width: 100%;
 	background-color: 	#6096B4;
@@ -79,33 +541,130 @@ body {
 	margin-bottom: 30px;
 	float: left;
 	margin-right: 20px;
-	box-shadow: 8px 12px 4px #9ecce5
-  }
-  
-  .shape2 {
+	box-shadow: 8px 12px 4px #9ecce5;
 	border-radius: 45px;
-	/* border-bottom-right-radius: 45px; */
-  }
+} */
 
-  
+/* body#namecard {
+	height: 100%;
+	width: 100%;
+	background-color: 	#6096B4;
+ 	border: 3px solid #316b80;
+	margin-bottom: 30px;
+	float: left;
+	margin-right: 20px;
+	box-shadow: 8px 12px 4px #9ecce5;
+} */
 
-body { 
-  font-family: Georgia, serif;
-  color: #000;
-  background-color: #ffffff; 
-  text-align:left; /* for IE */
-  margin-top: 30px; 
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left:  50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  max-width: 960px;
+
+
+/* -------- unordered list ------------- */
+ul{
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
 }
 
-#layout-menu {
+p + ul {
+	margin-top: -0.5em;
+}
+
+
+/* ------------- list --------------- */
+li {
+	margin-top:0.9em;
+	text-align:justify;
+	width: 98%;
+}
+
+li p {
+	margin-bottom: 0.3em;
+}
+
+
+/* ---------------- Table --------------- */
+table + table {
+    margin-top: 1em;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+
+
+/* ------------- Image ---------------- */
+img {
+    border: none;
+}
+
+/* img.rounded {
+	object-fit: cover;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+} */
+
+
+
+
+
+/* -------------------- Contents in tab ------------------------ */
+.tabcontent {										/* Style the tab content */
+	display: none;
+	padding: 1px 1px;
+	border-top: none;
+  }
+
+
+
+
+/* -------- dive footer ----------------- */
+div#footer {
+	font-size: medium;
+	border-top: 2px solid #c0c0c0;
+	padding: 50px;
+	/* margin-top: 4.0em; */
+	color: #c0c0c0;
+	text-align: center;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer h3 {
+	color: #002b5b;
+	font-family: lacida;
+}
+
+div#footer-text {
+	text-align: center;
+	/* padding-bottom: 8px; */
+}
+
+/* ------------------------------------- */
+
+/* pre {
+	padding: 0;
+	margin: 0;
+} */
+
+
+/* table#tlayout {
+    border: 1px solid #de1010 ;
+    border-collapse: separate;
+    background: rgb(255, 255, 255);
+} */
+
+/*
+body {
+	background: white;
+	padding-bottom: 8px;
+	margin: 0;
+}
+*/
+/* #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
@@ -121,42 +680,9 @@ body {
 #layout-menu td {
 	background: #f4f4f4;
     vertical-align: top;
-}
+} */
 
-#layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
-	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-}
-
-#layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
-}
-
-tt {
-    background: #ffffdd;
-}
-
-pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
-}
-
-a, a > tt {
-	color: #224b8d;
-	text-decoration: none;
-}
-
-a:hover {
-	border-bottom: 1px gray dotted;
-}
-
-#layout-menu a.current:link, #layout-menu a.current:visited {
+/* #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #022b6d;
 	border-bottom: 1px gray solid;
 }
@@ -166,9 +692,9 @@ a:hover {
 }
 #layout-menu a:hover {
 	text-decoration: none;
-}
+} */
 
-div.menu-category {
+/* div.menu-category {
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
@@ -179,156 +705,75 @@ div.menu-category {
 div.menu-item {
 	padding-left: 16px;
 	text-indent: -16px;
-}
+} */
 
-div#toptitle {
-	padding-bottom: 0.2em;
-	margin-bottom: 0.4em;
-	/*border-bottom: 3px double gray;*/
-}
+/* #layout-menu a {
+	line-height: 1.5em;
+	margin-left: 0.5em;
+} */
 
-/* Reduce space if we begin the page with a title. */
-div#toptitle + h2, div#toptitle + h3 {
-	margin-top: 0em;
-}
+/* tt {
+    background: #ffffdd;
+} */
 
-div#subtitle {
+/* pre, tt {
+	font-size: 90%;
+	font-family: monaco, monospace;
+} */
+
+/* div#subtitle {
 	margin-top: 0.0em;
 	margin-bottom: 0.0em;
 	padding-top: 0em;
 	padding-bottom: 0.1em;
-}
+} */
 
-em {
-	font-style: italic;
-}
 
-strong {
+/* strong {
 	font-weight: bold;
-}
+} */
 
-
-h1, h2, h3 {
-	color: #316b80;
-	margin-top: 0.7em;
-	margin-bottom: 0.5em;
-	padding-bottom: 0.2em;
-	line-height: 1.0;
-	padding-top: 0.5em;
-	border-bottom: 2px solid #316b80;
-}
-
-h1 {
-	font-size: 165%;
-	padding-bottom: 0.3em;
-}
-
-h2 {
-	padding-top: 0.8em;
-	font-size: 125%;
-}
-
-h2 + h3 {
-    padding-top: 0.2em;
-}
-
-h3 {
-	font-size: 110%;
-	border-bottom: none;
-}
-
-p {
-	margin-top: 0.0em;
-	margin-bottom: 0.8em;
-	padding: 0;
-	line-height: 1.3;
-}
-
-pre {
-	padding: 0;
-	margin: 0;
-}
-
-div#footer {
-	font-size: small;
-	border-top: 1px solid #c0c0c0;
-	padding-top: 0.1em;
-	margin-top: 4.0em;
-	color: #c0c0c0;
-}
-
-div#footer a {
-	color: #80a0b0;
-}
-
-div#footer-text {
-	float: left;
-	padding-bottom: 8px;
-}
-
-ul, ol, dl {
-	margin-top: 0.2em;
-	padding-top: 0;
-	margin-bottom: 0.8em;
-}
-
-dt {
+/* dt {
 	margin-top: 0.5em;
 	margin-bottom: 0;
-}
+} */
 
-dl {
+/* dl {
 	margin-left: 20px;
-}
+} */
 
-dd {
+/* dd {
 	color: #222222;
-}
+} */
 
-dd > *:first-child {
+/* dd > *:first-child {
 	margin-top: 0;
-}
+} */
 
-ul {
+/* ul {
 	list-style-position: outside;
 	list-style-type: square;
-}
+} */
 
-ul.b {
+/* ul.b {
 	list-style-position: outside;
 	list-style-type: circle;
-}
+} */
 
-
-p + ul, p + ol {
-	margin-top: -0.5em;
-}
-
-li {
-	margin-top:0.9em;
-	text-align:justify;
-	width: 98%;
-}
-
-ol {
-	list-style-position: outside;
-	list-style-type: decimal;
-}
-
-li p, dd p {
-	margin-bottom: 0.3em;
-}
-
-
-ol ol {
+/* ol ol {
 	list-style-type: lower-alpha;
 }
 
 ol ol ol {
 	list-style-type: lower-roman;
-}
+} */
 
-p + div.codeblock {
+/* ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+} */
+
+/* p + div.codeblock {
 	margin-top: -0.6em;
 }
 
@@ -336,16 +781,16 @@ div.codeblock, div.infoblock {
 	margin-right: 0%;
 	margin-top: 1.2em;
 	margin-bottom: 1.3em;
-}
+} */
 
-div.blocktitle {
+/* div.blocktitle {
 	font-weight: bold;
 	color: #cd7b62;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
-}
+} */
 
-div.blockcontent {
+/* div.blockcontent {
 	border: 1px solid silver;
 	padding: 0.3em 0.5em;
 }
@@ -372,9 +817,9 @@ div.infoblock p + p {
 
 div.codeblock > div.blockcontent {
 	background: #f6f6f6;
-}
+} */
 
-span.pycommand {
+/* span.pycommand {
 	color: #000070;
 }
 
@@ -395,55 +840,33 @@ span.error {
 }
 span.comment, span.comment > *, span.string, span.string > * {
 	color: #606060;
-}
+} */
 
-@media print {
+/* @media print {
 	#layout-menu { display: none; }
-}
+} */
 
-#fwtitle {
+/* #fwtitle {
 	margin: 2px;
-}
+} */
 
-#fwtitle #toptitle {
-	padding-left: 0.5em;
-	margin-bottom: 0.5em;
-}
+/* ------------ Title/layout specific heading 2 spacing -------------- */
+/* div#toptitle + h2 {
+	margin-top: 0em;
+} */
 
-#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+/* ------------ Title/layout specific heading 1&2 first-child spacing -------------- */
+/* #layout-content h1:first-child, #layout-content h2:first-child {
 	margin-top: -0.7em;
-}
+} */
 
-div#toptitle h1, #layout-content div#toptitle h1 {
-	margin-bottom: 0.0em;
-	padding-bottom: 0.1em;
-	padding-top: 0;
-	margin-top: 0.5em;
-	border-bottom: none;
-}
-
-
-
-table + table {
-    margin-top: 1em;
-}
-
-tr.heading {
+/* -------------- tr ------------- */
+/* tr.heading {
     font-weight: bold;
     border-bottom: 2px solid black;
-}
+} */
 
-
-table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
-}
-
-img {
-    border: none;
-}
-
-img.eq {
+/* img.eq {
 	padding: 0;
 	padding-left: 0.1em;
 	padding-right: 0.1em;
@@ -455,13 +878,4 @@ img.eqwl {
 	padding-top: 0.6em;
 	padding-bottom: 0.2em;
 	margin: 0;
-}
-
-
-
-img.rounded {
-	object-fit: cover;
-	border-radius: 50%;
-	height: 200px;
-	width: 200px;
-  }
+} */
