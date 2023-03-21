@@ -463,7 +463,7 @@ div#conf-journal-publication-list{
 	margin: 10px;
 	display: inline-block;
 	width: 45%;
-	min-width: 800px;
+	min-width: 840px;
 	/* max-width: 400px; */
 	height: auto;
 }
