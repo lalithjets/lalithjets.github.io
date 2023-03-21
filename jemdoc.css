@@ -1,4 +1,4 @@
-/* Full html and page layout */
+/* ------------page-wide setting ------------------*/
 html {
   background-color: #ffffff; 
 
@@ -14,15 +14,52 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  /* margin-bottom: 0px; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding-left:  50px; */
-  /* padding-right: 50px; */
-  /* padding-top: 10px; */
-  /* padding-bottom: 30px; */
-  /* max-width: auto; 960px */
 }
+
+/* ------------- Font Format ---------------------- */
+h1, h2 {									/* all heading */
+	color: #316b80;
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
+	padding-top: 2px;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+}
+
+h1 {										/* Heading 1 */
+	font-size: 165%;
+	padding-bottom: 0.3em;
+}
+
+h2 {										/* Heading 2 */
+	padding-top: 0.1em;
+	font-size: 125%;
+}
+
+p {											/* paragraph */
+	margin-top: 0.0em;					
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.2;
+}
+
+em {										/* Font italic */
+	font-style: italic;
+}
+
+a {											/* hyperlink */
+	color: #224b8d;
+	text-decoration: none;
+}
+
+a:hover {									/* hyperlink hover */
+	border-bottom: 1px gray dotted;
+}
+
+img {
+    border: none;
+}
+
 
 /* ------------ name card ----------------- */
 body#namecard {
@@ -35,39 +72,31 @@ div#namecardtop {
 	height: 150px;
 	width: 100%;
 	background-color: 	#feffe7;
-	/* background-color: #BAD7e9; */
 }
 
 div#namecardbottom {
 	height:250px;
 	width: 100%;
-	/* background-color: 	#86c8bc; */
-	/* background-color: #6096b4; */
 	background-color: #4e6e81;
 	text-align: center;	
 }
 
 div#namecardimg { 							/* p for namecard */
 	position: relative;
+	display: inline-block;
 	bottom: 120px;
-	display: flex;
-    justify-content: center;
-	right: 220px;
 }
 
 div#namecardtext { 							/* p for namecard */
 	position:relative;
-	text-align: center;
-	bottom: 340px;
-	left: 220px;
+	display: inline-block;
+	bottom: 120px;
 }
 
 div#namecardbottom h1 { 					/* p for namecard */
-	font-family: Bradley Hand;
+	font-family: helvetica;
 	font-size: 34px;
 	color: #ffffff;
-	/* color: #16213e; */
-	/* color: #ffffd0; */
 	margin-top: 0px;
 	margin-bottom: 0%;
 	border-bottom: none;
@@ -77,9 +106,7 @@ div#namecardbottom p { 						/* p for namecard */
 	font-family: helvetica;
 	font-size: 20px;
 	margin-top: 0px;
-	/* color: #ffffd0; */
 	color: #ffffff;
-	 /*#243763; */
 }
 
 div#namecardbottom a { 						/* p for namecard */
@@ -91,15 +118,12 @@ div#namecardbottom a { 						/* p for namecard */
 	/* #243763; */
 }
 
-
 img.namecard {
 	height: 340px;
-	width: 35%;
-	max-width: 300px;
-	min-width: 200px;
+	width: 49%;
+	max-width: 340px;
+	min-width: 250px;
 	display: block;
-	/* box-shadow: 2px 2px 4px #16213e; */
-	/* border: 2px solid #002b5b; */
 	box-shadow: 2px 2px 5px #002b5b;
 }
 
@@ -111,7 +135,7 @@ img.icon {
 	border: 3px solid #16213e;
 }
 
-/* -------------------- Button ------------------------ */
+/* -------------------- tab Button ------------------------ */
 .buttontab {										/* Tab button format */
 	text-align: center;
 	overflow: hidden;
@@ -134,7 +158,6 @@ img.icon {
 	color: #ffffff;
 }
 
-
 .button:hover {										/* Change background color of buttons on hover */
 	background-color: transparent;
 	font-size: 22px;
@@ -150,7 +173,8 @@ img.icon {
 	border-top-left-radius:10px ;
 }
 
-/* ------------- tabs content */
+
+/* ------------- tab-wide content -----------------*/
 .tabscontent {
     text-align: left;
     vertical-align: middle;
@@ -161,23 +185,9 @@ img.icon {
 
 .subheading h2{						/* common subheading format */
 	font-size: 25px;
-	font-family: cursive;
+	font-family: helvetica;
 	text-align: center;
 	color: #002b5b;
-}
-
-div#biography{
-	font-size: 22px;
-	font-family: Lucida;
-	text-align: justify ;
-	/* margin: 50px; */
-	padding-top:10px;
-	padding-left: 50px;
-	padding-right:50px;
-	padding-bottom: 10px;
-	/* background-color:#Ecf9ff ; */
-	margin-top:0px;
-
 }
 
 img.hicon {
@@ -186,13 +196,24 @@ img.hicon {
 }
 
 
+/* ---------------- biography --------------------- */
+div#biography{
+	font-size: 22px;
+	font-family: Lucida;
+	text-align: justify ;
+	padding-top:10px;
+	padding-left: 50px;
+	padding-right:50px;
+	padding-bottom: 10px;
+	margin-top:0px;
+}
+
+
+/* ---------------- news feeds --------------------- */
 div#newfeeds{
 	background-color: #eeeeee;
-	/* background-color: #def5e5; */
 	padding-top: 2px;
 	padding-bottom:20px; 
-	
-	/* margin-right:25px; */
 	padding:25px;
 }
 
@@ -200,14 +221,12 @@ div#newfeeds{
   overflow-x: scroll;
   overflow-y: hidden;
   height: 280px;
-
   white-space: nowrap;
-  /* vertical-align: middle; */
 }
+
 .scrolling-wrapper::-webkit-scrollbar {
 	display:none;
 }
-
 
 .card {
 	vertical-align: middle;
@@ -250,6 +269,7 @@ div#newfeeds{
 }
 
 
+/* ------------- key publications ------------------ */
 div#Key-Publications {
 	text-align: center;
 	padding: 10px;
@@ -284,6 +304,7 @@ div#key-pub-tile-caption p{
 }
 
 
+/* --------------- dataset -------------------- */
 div#dataset{
 	background-color: #eeeeee;
 	text-align: center;	
@@ -313,7 +334,7 @@ div#dataset{
 }
 
 
-
+/* ---------------- awards ------------------- */
 div#awards{
 	text-align: center;	
 	padding-bottom: 50px;
@@ -346,7 +367,6 @@ img.award-title {
 	margin: 10px;
 }
 
-
 div#award-tile-caption h2{
 	padding: 0px;
 	margin: 0px;
@@ -359,6 +379,8 @@ div#award-tile-caption h3{
 	font-family: monospace;
 }
 
+
+/* ------------------ talks ------------------ */
 div#talks {
 	background-color: #eeeeee;
 	text-align: center;
@@ -394,12 +416,13 @@ div#talk-tile-caption{
 	box-shadow: 2px 2px 5px #2e4f4f;	
 }
 
+/* --------------- academic services ---------------------- */
 div#academic-services{
 	text-align: center;
 }
 
 
-  /* -------------------- ChartJS graph ------------------------ */
+ /* -------------------- ChartJS graph ------------------------ */
 div#publication-charts{
 	text-align: center;	
 	padding: 50px;
@@ -409,11 +432,8 @@ div#publication-charts{
 .publication-chart {								/*  chartJS properties */
 	margin: 10px;
 	display: inline-block;
-	/* display: grid; */
-	/* grid-template-columns: 1fr 1fr; */
 	width: 42%;
 	height: 250px;
-	/* margin: 0 auto; */
 }
 
 .publication-chart #conference_chart,
@@ -429,11 +449,10 @@ div#publication-charts{
 }
 
 
- /* -------------------- ChartJS graph ------------------------ */
+ /* -------------------- Publication list ------------------------ */
 div#conf-journal-publication{
 	padding: 20px;
 }
-
 
 div#conf-journal-publication-list{
 	text-align: center;	
@@ -466,9 +485,7 @@ img.publications-img-tile{
 }
 
 td.publications-caption {
-	/* padding: 10px; */
 	width: 100%;
-	/* background-color: #0e8388; */
 	text-align: center;
 }
 
@@ -476,155 +493,21 @@ div #book-publication{
 	padding: 20px;
 	background-color: #eeeeee;
 }
+
 div#book-publication-list{
 	text-align: center;	
 	padding-bottom: 20px;
 }
 
-/* ------------ all content layout -------------------- */
-#page-content {	
-    text-align: left;
-    vertical-align: middle;
-	border: none;
-    background: #ffffff;
+div#resume-content{
+	text-align: center;
 }
 
-/* ------------- Font Format ---------------------- */
-h1, h2 {									/* all heading */
-	color: #316b80;
-	margin-top: 0.7em;
-	margin-bottom: 0.5em;
-	padding-top: 2px;
-	padding-bottom: 0.2em;
-	line-height: 1.0;
-	/* border-bottom: 2px solid #a5c9ca; */
-}
-
-h1 {										/* Heading 1 */
-	font-size: 165%;
-	padding-bottom: 0.3em;
-}
-
-h2 {										/* Heading 2 */
-	padding-top: 0.1em;
-	font-size: 125%;
-}
-
-p {											/* paragraph */
-	margin-top: 0.0em;					
-	margin-bottom: 0.8em;
-	padding: 0;
-	line-height: 1.2;
-}
-
-em {										/* Font italic */
-	font-style: italic;
-}
-
-a {											/* hyperlink */
-	color: #224b8d;
-	text-decoration: none;
-}
-
-a:hover {									/* hyperlink hover */
-	border-bottom: 1px gray dotted;
-}
-
-
-
-/* ------------------ Main Id card -------------------- */
-/* .idshape {
-	height: 100%;
-	width: 100%;
-	background-color: 	#6096B4;
- 	border: 3px solid #316b80;
-	margin-bottom: 30px;
-	float: left;
-	margin-right: 20px;
-	box-shadow: 8px 12px 4px #9ecce5;
-	border-radius: 45px;
-} */
-
-/* body#namecard {
-	height: 100%;
-	width: 100%;
-	background-color: 	#6096B4;
- 	border: 3px solid #316b80;
-	margin-bottom: 30px;
-	float: left;
-	margin-right: 20px;
-	box-shadow: 8px 12px 4px #9ecce5;
-} */
-
-
-
-/* -------- unordered list ------------- */
-ul{
-	margin-top: 0.2em;
-	padding-top: 0;
-	margin-bottom: 0.8em;
-}
-
-p + ul {
-	margin-top: -0.5em;
-}
-
-
-/* ------------- list --------------- */
-li {
-	margin-top:0.9em;
-	text-align:justify;
-	width: 98%;
-}
-
-li p {
-	margin-bottom: 0.3em;
-}
-
-
-/* ---------------- Table --------------- */
-table + table {
-    margin-top: 1em;
-}
-
-table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
-}
-
-
-/* ------------- Image ---------------- */
-img {
-    border: none;
-}
-
-/* img.rounded {
-	object-fit: cover;
-	border-radius: 50%;
-	height: 200px;
-	width: 200px;
-} */
-
-
-
-
-
-/* -------------------- Contents in tab ------------------------ */
-.tabcontent {										/* Style the tab content */
-	display: none;
-	padding: 1px 1px;
-	border-top: none;
-  }
-
-
-
-
-/* -------- dive footer ----------------- */
+/* -------- footer ----------------- */
 div#footer {
 	font-size: medium;
 	border-top: 2px solid #c0c0c0;
 	padding: 50px;
-	/* margin-top: 4.0em; */
 	color: #c0c0c0;
 	text-align: center;
 }
@@ -640,242 +523,4 @@ div#footer h3 {
 
 div#footer-text {
 	text-align: center;
-	/* padding-bottom: 8px; */
 }
-
-/* ------------------------------------- */
-
-/* pre {
-	padding: 0;
-	margin: 0;
-} */
-
-
-/* table#tlayout {
-    border: 1px solid #de1010 ;
-    border-collapse: separate;
-    background: rgb(255, 255, 255);
-} */
-
-/*
-body {
-	background: white;
-	padding-bottom: 8px;
-	margin: 0;
-}
-*/
-/* #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
-	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
-}
-
-#layout-menu td {
-	background: #f4f4f4;
-    vertical-align: top;
-} */
-
-/* #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
-}
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
-	text-decoration: none;
-}
-#layout-menu a:hover {
-	text-decoration: none;
-} */
-
-/* div.menu-category {
-	border-bottom: 1px solid gray;
-	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
-	font-weight: bold;
-}
-
-div.menu-item {
-	padding-left: 16px;
-	text-indent: -16px;
-} */
-
-/* #layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
-} */
-
-/* tt {
-    background: #ffffdd;
-} */
-
-/* pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
-} */
-
-/* div#subtitle {
-	margin-top: 0.0em;
-	margin-bottom: 0.0em;
-	padding-top: 0em;
-	padding-bottom: 0.1em;
-} */
-
-
-/* strong {
-	font-weight: bold;
-} */
-
-/* dt {
-	margin-top: 0.5em;
-	margin-bottom: 0;
-} */
-
-/* dl {
-	margin-left: 20px;
-} */
-
-/* dd {
-	color: #222222;
-} */
-
-/* dd > *:first-child {
-	margin-top: 0;
-} */
-
-/* ul {
-	list-style-position: outside;
-	list-style-type: square;
-} */
-
-/* ul.b {
-	list-style-position: outside;
-	list-style-type: circle;
-} */
-
-/* ol ol {
-	list-style-type: lower-alpha;
-}
-
-ol ol ol {
-	list-style-type: lower-roman;
-} */
-
-/* ol {
-	list-style-position: outside;
-	list-style-type: decimal;
-} */
-
-/* p + div.codeblock {
-	margin-top: -0.6em;
-}
-
-div.codeblock, div.infoblock {
-	margin-right: 0%;
-	margin-top: 1.2em;
-	margin-bottom: 1.3em;
-} */
-
-/* div.blocktitle {
-	font-weight: bold;
-	color: #cd7b62;
-	margin-top: 1.2em;
-	margin-bottom: 0.1em;
-} */
-
-/* div.blockcontent {
-	border: 1px solid silver;
-	padding: 0.3em 0.5em;
-}
-
-div.infoblock > div.blockcontent {
-	background: #ffffee;
-}
-
-div.blockcontent p + ul, div.blockcontent p + ol {
-	margin-top: 0.4em;
-}
-
-div.infoblock p {
-	margin-bottom: 0em;
-}
-
-div.infoblock li p, div.infoblock dd p {
-	margin-bottom: 0.5em;
-}
-
-div.infoblock p + p {
-	margin-top: 0.8em;
-}
-
-div.codeblock > div.blockcontent {
-	background: #f6f6f6;
-} */
-
-/* span.pycommand {
-	color: #000070;
-}
-
-span.statement {
-	color: #008800;
-}
-span.builtin {
-	color: #000088;
-}
-span.special {
-	color: #990000;
-}
-span.operator {
-	color: #880000;
-}
-span.error {
-	color: #aa0000;
-}
-span.comment, span.comment > *, span.string, span.string > * {
-	color: #606060;
-} */
-
-/* @media print {
-	#layout-menu { display: none; }
-} */
-
-/* #fwtitle {
-	margin: 2px;
-} */
-
-/* ------------ Title/layout specific heading 2 spacing -------------- */
-/* div#toptitle + h2 {
-	margin-top: 0em;
-} */
-
-/* ------------ Title/layout specific heading 1&2 first-child spacing -------------- */
-/* #layout-content h1:first-child, #layout-content h2:first-child {
-	margin-top: -0.7em;
-} */
-
-/* -------------- tr ------------- */
-/* tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-} */
-
-/* img.eq {
-	padding: 0;
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	margin: 0;
-}
-
-img.eqwl {
-	padding-left: 2em;
-	padding-top: 0.6em;
-	padding-bottom: 0.2em;
-	margin: 0;
-} */
