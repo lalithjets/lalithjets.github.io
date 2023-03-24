@@ -147,7 +147,7 @@ img.icon {
 }
 
 .button {										  	/* Style the buttons inside the tab */
-	font-weight: bold;
+	/* font-weight: bold; */
 	font-family: Tahoma;
 	background-color: transparent;
 	float: center;
@@ -156,18 +156,18 @@ img.icon {
 	cursor: pointer;
 	padding: 15px 15px;
 	transition: 0.2s;
-	font-size: 20px;
+	font-size: 22px;
 	color: #ffffff;
 }
 
 .button:hover {										/* Change background color of buttons on hover */
 	background-color: transparent;
-	font-size: 22px;
+	font-size: 24px;
 }
   
 .button.active {									/* Create an active/current tablink class */
 	background-color: #30475e;
-	font-size: 24px;
+	font-size: 26px;
 	border-top: 2px solid #313552;
 	border-left: 2px solid #313552;
 	border-right: 2px solid #313552;
@@ -504,6 +504,7 @@ td.publications-caption h3{
 	margin-bottom: 12px;
 }
 
+ /* -------------------- Book Publication list ------------------------ */
 div #book-publication{
 	padding: 10px;
 	background-color: #eeeeee;
@@ -519,10 +520,182 @@ div#resume-content{
 }
 
 
+ /* -------------------- Robotics Project ------------------------ */
 div#Robotic-Projects{
 	text-align: center;
+	min-width: 800px;
 }
 
+
+ /* -------------------- BoaIV ------------------------ */
+div#BoaIV-2017 {
+	padding: 30px;
+}
+
+div#BoaIV-2017 p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin: 20px;
+	margin-top: 0px;
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div#BoaIV-video {
+	display: inline-block;
+	/* margin: 20px; */
+	min-width: 800px;
+	max-width: 1000px;
+	vertical-align: middle;
+}
+
+div#boaiv-design-product {
+	display: inline-block;
+	padding: 0px;
+	text-align: center;
+	max-width: 800px;
+}
+
+.boaiv-tiles {
+	display: inline-block;
+	width: 90%;
+	min-width: 320px;
+	max-width: 700px;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+.boaiv-tile {
+	vertical-align: middle;
+}
+
+img.boaiv-image{
+	/* width: 42%; */
+	/* min-width: 300px; */
+	max-width: 700px;
+	aspect-ratio: 16/9;
+	/* margin: 10px; */
+	border: 5px solid #000000;
+	border-radius: 10px;
+}
+
+
+div#boaiv-tile-caption{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+}
+ /* -------------------- techX ------------------------ */
+div#techXChallenge-2013 {
+	/* background-color: #ecf9ff; */
+	background-color: #eeeeee;
+	padding: 30px;
+}
+
+div#techxRobot {
+	display: inline-block;
+	margin: 20px;
+	min-width: 800px;
+	max-width: 1000px;
+}
+
+img.videogif{
+	width: 40%;
+	min-width: 300px;
+	max-width: 380px;
+	aspect-ratio: 16/9;
+	margin: 5px;
+	border: 5px solid #000000;
+	border-radius: 10px;
+}
+
+div#techXChallenge-2013 h1 { 						/* p for namecard */
+	font-size: 34px;
+}
+
+
+div#techXChallenge-2013 p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin: 20px;
+	margin-top: 0px;
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	/* color: #e31515; */
+}
+
+div#techxspeccontribution h3{
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div#techxspeccontribution {
+	background-color: #a0c3d2;
+	/* min-width: 800px; */
+	max-width: 800px;
+	display: inline-block;
+	border-radius: 30px;
+}
+
+div#robot-env-contribution{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+td.TechXTable{
+	border-radius: 20px;
+	min-width: 300px;
+	max-width: 450px;
+	vertical-align: top;
+
+}
+
+td.TechXTable p{
+	text-align: left;
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+td.TechXTable ul{
+	text-align: justify;
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+div#techx-simulations {
+	display: inline-block;
+	padding: 20px;
+	min-width: 800px;
+}
+
+.techx-simtiles {
+	display: inline-block;
+	width: 23%;
+	min-width: 320px;
+	height: auto;
+}
+
+.techx-simtile {
+	vertical-align: middle;
+}
+
+
+div#techx-sim-tile-caption{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#techx-sim-tile-caption h3{
+	font-size: 16px;
+	margin-top: 0px;
+}
 
 /* -------- footer ----------------- */
 div#footer {

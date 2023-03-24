@@ -47,7 +47,7 @@
 		<div class="buttontab">
 				<button class="button" onclick="openTab(event, 'Highlights')" id="defaultOpen">Highlights</button> &nbsp 
 				<button class="button" onclick="openTab(event, 'Publications')">Publications (Full List)</button> &nbsp
-				<!-- <button class="button" onclick="openTab(event, 'Robotic-Projects')">Robotic Projects</button> &nbsp -->
+				<button class="button" onclick="openTab(event, 'Robotic-Projects')">Robotics Projects</button> &nbsp
 				<button class="button" onclick="openTab(event, 'Resume')">Resume</button>
 		</div>
 		
@@ -737,12 +737,132 @@
 				<h3> &copy; Seenivasan Lalithkumar | Last updated: March 2023 </h3>
 			</div>
 		</div>
-		<!-- <div id="Robotic-Projects" class="tabscontent">
-			<div id="techXChallenge" class="subheading">
-				<h2> TechX challenge</h2>
-				<img src='robotic_projects/techXchallengeR1.gif' />
+		<div id="Robotic-Projects" class="tabscontent">
+			<div id="BoaIV-2017" class="subheading">
+				<h1> Undergraduate Projects </h1>
+				<h2> Boa-IV</h2>
+				<h3>Image-Guided Minimally Invasive Robotic Surgery </h3>
+				<br>
+				<p>
+					Our team conceptualized and designed a novel tendon-driven actuation mechanism for stem actuation of catheter-size spring-backbone manipulators.
+					Using this novel concept, we are also able to miniaturize surgical tools to a diameter of 2-3m that can be manipulated to perform surgical actions. 
+					The miniaturized surgical tools can be deployed through a single-port flexible manipulator, which has an overall shaft diameter of 8-12 mm.
+				</p>
+				<div class="boaiv-tiles ">
+					<img src='robotic_projects/BoaIV-I3.jpg' class="boaiv-image"/>
+					<br>
+					<div id="boaiv-tile-caption">
+						<h3>Minimum Viable Product</h3>
+					</div>
+				</div>
+				<br>
+				<div id="BoaIV-video">
+					<img src='robotic_projects/BOAIVV1.gif' class="videogif"/>
+					<img src='robotic_projects/BOAIVV2.gif' class="videogif"/>
+					<br>
+					<h3> Slave (Forcepts and electrocautery) Control Demo</h3>
+				</div>
+				<br>
+				<h2>Related Papers </h2>
+				<h3 style="margin-bottom: 5px;"> Pilot Study and Design Conceptualization for a Slim Single-port Surgical Manipulator with Spring Backbones and Catheter-size Channels. </h3>
+				<p style="text-align: center;">
+					Hongliang Ren, Cai Xin Chen, Catherine Cai, Krishna Ramachandra and <b>Lalithkumar Seenivasan</b>.<br>
+					<em>IEEE International Conference on Information and Automation</em> (<i><b>ICIA</b></i>), 2017.
+				</p>
+				<h3 style="margin-bottom: 5px;">Tendon routing and anchoring for cable-driven single-port surgical manipulators with spring backbones and luminal constraints. </h3>
+				<p style="text-align: center;">
+					<b>Lalithkumar Seenivasan</b>, Xinchen Cai, Krishna Ramachandra, Francis Wong and Hongliang Ren. <br>
+					<em>Flexible Robotics in Medicine: A Design Journey of Motion Generation Mechanisms and Biorobotic System Development</em>, <i><b>Academic Press</b></i>, 2020.
+				</p>
+				<br>
 			</div>
-		</div> -->
+			<div id="techXChallenge-2013" class="subheading">
+				<h1> Diploma Projects </h1>
+				<h2> TechX Challenge 2013, Singapore</h2>
+				<br>
+				<p>
+					I was part of the <em> Temasek Polytechnic team </em>in the <em>TechX 2013 National Robotic Competition </em> organized by the <em>Defence Science & Technology 
+					Agency (DSTA), Singapore </em>. The competition comprised 6 challenges, where, the robots were assessed on their ability to autonomously navigate 
+					challenging terrains to conduct search and rescue missions and simultaneously relay information to base station in real-time.  Our team managed 
+					to pass the qualification round and qualified for the grand finals. 
+				</p>
+				<div id="techxRobot">
+					<img src='robotic_projects/techXchallengeR1.gif' class="videogif"/>
+					<img src='robotic_projects/techXchallengeR2.gif' class="videogif"/>
+				</div>
+				<br>
+				<div id="techxspeccontribution">
+					<h3> My Specific Contribution </h3>
+					<br>
+					<p>
+						I designed and developed 3D simulations of our robot and competition challenge 
+						environments using the ROS and Gazebo simulator. The resultant simulations enabled 
+						the software team to test our navigation and sensor processing algorithms.
+					</p>
+					<div id="robot-env-contribution">
+						<table >
+							<tr>
+								<td class ="TechXTable">
+									<h3> Robot Simulation</h3>
+									<p>
+										<ul>
+											<li> Robot body</li>
+											<li> Robot Joint Control: Simplify track system to suit ROS-Gazebo Simulation </li>
+											<li> Lidar and vision sensor simulation</li>
+											<li> GPS simulation</li>
+										</ul>
+									</p>
+								</td>
+								<td class ="TechXTable"> 
+									<h3> Challenge Simulation</h3>
+									<p>
+										<ul>
+											<li> Uneven terrain</li>
+											<li> Challenge specific enviroment: Barriers, dynamic obstacles, uneven terrians, staircases and target objects</li>
+											<li> Urban enviroment: with flat terrains, uneven terrains and multi-story houses</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<br>
+				<div id="techx-simulations">
+					<div class="techx-simtiles techx-simtile">
+						<img src='robotic_projects/techXchallengeE1.gif' class="videogif"/>
+						<br>
+						<div id="techx-sim-tile-caption">
+							<h3>Robot and Challenge Simulation</h3>
+						</div>
+					</div>
+					<div class="techx-simtiles techx-simtile">
+						<img src='robotic_projects/techXchallengeE2.gif' class="videogif"/>
+						<br>
+						<div id="techx-sim-tile-caption">
+							<h3>Obstacle Avoidance</h3>
+						</div>
+					</div>
+					<div class="techx-simtiles techx-simtile">
+						<img src='robotic_projects/techXchallengeE3.gif' class="videogif"/>
+						<br>
+						<div id="techx-sim-tile-caption">
+							<h3>Staircase Climbing</h3>
+						</div>
+					</div>
+					<div class="techx-simtiles techx-simtile">
+						<img src='robotic_projects/techXchallengeE4.gif' class="videogif"/>
+						<br>
+						<div id="techx-sim-tile-caption">
+							<h3>Pan Scan</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="subheading">	
+				<h3> &copy; Seenivasan Lalithkumar | Last updated: March 2023 </h3>
+			</div>
+		</div>
 		<div id="Resume" class="tabscontent">
 			<div id="resume-content" class="subheading">
 				<h2><img src="./pic/biography.png" class="hicon"> <u>Resume</u> </h2>
