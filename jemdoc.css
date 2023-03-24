@@ -122,7 +122,7 @@ img.namecard {
 	height: 340px;
 	width: 49%;
 	max-width: 340px;
-	min-width: 250px;
+	min-width: 300px;
 	display: block;
 	box-shadow: 2px 2px 5px #002b5b;
 }
@@ -342,7 +342,7 @@ div#awards{
 
 .awardtiles {
 	display: inline-block;
-	width: 45%;
+	width: 22%;
 	min-width: 320px;
 	max-width: 400px;
 	height: auto;
@@ -370,6 +370,7 @@ img.award-title {
 div#award-tile-caption h2{
 	padding: 0px;
 	margin: 0px;
+	font-size: 20px;
 	font-family: monospace;
 }
 
@@ -451,21 +452,26 @@ div#publication-charts{
 
  /* -------------------- Publication list ------------------------ */
 div#conf-journal-publication{
-	padding: 20px;
+	padding: 10px;
+	vertical-align: middle;
 }
 
 div#conf-journal-publication-list{
 	text-align: center;	
 	padding-bottom: 20px;
+	vertical-align: middle;
 }
 
 .publicationstiles {
-	margin: 10px;
+	margin: 5px;
 	display: inline-block;
 	width: 45%;
-	min-width: 840px;
+	min-width: 660px;
+	max-width: 720px;
 	/* max-width: 400px; */
 	height: auto;
+	min-height: 220px;
+	vertical-align: middle;
 }
 
 .publicationstile {
@@ -478,8 +484,8 @@ div#conf-journal-publication-list{
 }
 
 img.publications-img-tile{
-	width:350px; 
-	height:200px;
+	width:260px; 
+	height:180px;
 	border: 2px solid #000	; 
 	box-shadow: 4px 4px 5px #9ecce5;
 }
@@ -487,10 +493,17 @@ img.publications-img-tile{
 td.publications-caption {
 	width: 100%;
 	text-align: center;
+	vertical-align: middle;
+}
+
+td.publications-caption h3{
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 12px;
 }
 
 div #book-publication{
-	padding: 20px;
+	padding: 10px;
 	background-color: #eeeeee;
 }
 
