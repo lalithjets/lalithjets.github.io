@@ -125,6 +125,7 @@ img.namecard {
 	min-width: 300px;
 	display: block;
 	box-shadow: 2px 2px 5px #002b5b;
+	border-radius: 50px;
 }
 
 img.icon {
@@ -485,7 +486,7 @@ div#conf-journal-publication-list{
 
 img.publications-img-tile{
 	width:260px; 
-	height:180px;
+	height:170px;
 	border: 2px solid #000	; 
 	box-shadow: 4px 4px 5px #9ecce5;
 }
