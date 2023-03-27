@@ -68,7 +68,7 @@ window.onload = function () {
        {  y: 2, text: "2", legendText:"ICRA + RA-L*", indexLabel: "ICRA + RA-L*: 2" },
        {  y: 1, text: "1", legendText:"Adv. Intell. Syst.", indexLabel: "Adv. Intell. Syst.: 1" },
        {  y: 1, text: "1", legendText:"Sensors", indexLabel: "Sensors: 1" },
-       {  y: 3, text: "3", legendText:"Others", indexLabel: "Others: 2" }
+       {  y: 3, text: "3", legendText:"Others", indexLabel: "Others: 3" }
        ],
      }
      ]
