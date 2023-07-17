@@ -5,7 +5,7 @@ window.onload = function () {
     var chart = new CanvasJS.Chart("conference_chart",
     {
       title:{
-        text: "Conference",
+        text: "Conference: 9",
         fontFamily: "Impact",
         fontWeight: "normal",
         horizontalAlign: "center",
@@ -28,7 +28,7 @@ window.onload = function () {
        showInLegend: false,
     
        dataPoints: [
-       {  y: 2, text:"2", legendText:"MICCAI", indexLabel: "MICCAI: 2" },
+       {  y: 3, text:"3", legendText:"MICCAI", indexLabel: "MICCAI: 3" },
        {  y: 2, text: "2", legendText:"ICRA + RA-L*", indexLabel: "ICRA + RA-L*: 2" },
        {  y: 1, text: "1", legendText:"ICRA%", indexLabel: "ICRA: 1" },
        {  y: 1, text: "1", legendText:"WS, ICML", indexLabel: "WS, ICML: 1" },
@@ -41,7 +41,7 @@ window.onload = function () {
     var chart2 = new CanvasJS.Chart("journal_chart",
     {
       title:{
-        text: "Journal",
+        text: "Journal: 9",
         fontFamily: "Impact",
         fontWeight: "normal",
         horizontalAlign: "center",
