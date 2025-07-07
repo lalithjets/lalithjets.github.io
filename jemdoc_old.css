@@ -1,0 +1,732 @@
+/* ------------page-wide setting ------------------*/
+html {
+  background-color: #ffffff; 
+
+}
+
+body { 
+  font-family: Georgia, serif;
+  color: #000;
+  background-color: #ffffff; 
+  text-align:left;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.sidebar {
+      background-color: #f4f4f4;
+      padding: 2rem;
+      width: 250px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+.main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+/* ------------- Font Format ---------------------- */
+h1, h2 {									/* all heading */
+	color: #316b80;
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
+	padding-top: 2px;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+}
+
+h1 {										/* Heading 1 */
+	font-size: 165%;
+	padding-bottom: 0.3em;
+}
+
+h2 {										/* Heading 2 */
+	padding-top: 0.1em;
+	font-size: 125%;
+}
+
+p {											/* paragraph */
+	margin-top: 0.0em;					
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.2;
+}
+
+em {										/* Font italic */
+	font-style: italic;
+}
+
+a {											/* hyperlink */
+	color: #224b8d;
+	text-decoration: none;
+}
+
+a:hover {									/* hyperlink hover */
+	border-bottom: 1px gray dotted;
+}
+
+img {
+    border: none;
+}
+
+
+/* ------------ name card ----------------- */
+body#namecard {
+	width: auto;
+	background-color:#ffffff;
+	margin-bottom: 30px;
+}
+
+div#namecardtop {
+	height: 150px;
+	width: 100%;
+	background-color: 	#feffe7;
+}
+
+div#namecardbottom {
+	height:250px;
+	width: 100%;
+	min-width: 800px;
+	background-color: #4e6e81;
+	text-align: center;	
+}
+
+div#namecardimg { 							/* p for namecard */
+	position: relative;
+	display: inline-block;
+	bottom: 120px;
+}
+
+div#namecardtext { 							/* p for namecard */
+	position:relative;
+	display: inline-block;
+	bottom: 120px;
+}
+
+div#namecardbottom h1 { 					/* p for namecard */
+	font-family: helvetica;
+	font-size: 34px;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0%;
+	border-bottom: none;
+}
+
+div#namecardbottom p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+	color: #ffffff;
+}
+
+div#namecardbottom a { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+	/* color: #ffffd0; */
+	color: #ffffff;
+	/* #243763; */
+}
+
+img.namecard {
+	height: 340px;
+	width: 49%;
+	max-width: 340px;
+	min-width: 300px;
+	display: block;
+	box-shadow: 2px 2px 5px #002b5b;
+	border-radius: 50px;
+}
+
+img.icon {
+	height:30px;
+	margin-bottom:-3px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border: 3px solid #16213e;
+}
+
+/* -------------------- tab Button ------------------------ */
+.buttontab {										/* Tab button format */
+	text-align: center;
+	overflow: hidden;
+	/* background-color: #86c8bc; */
+	background-color: #4e6e81;
+	border-bottom: 2px solid #094749;
+}
+
+.button {										  	/* Style the buttons inside the tab */
+	/* font-weight: bold; */
+	font-family: Tahoma;
+	background-color: transparent;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 15px 15px;
+	transition: 0.2s;
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.button:hover {										/* Change background color of buttons on hover */
+	background-color: transparent;
+	font-size: 24px;
+}
+  
+.button.active {									/* Create an active/current tablink class */
+	background-color: #30475e;
+	font-size: 26px;
+	border-top: 2px solid #313552;
+	border-left: 2px solid #313552;
+	border-right: 2px solid #313552;
+	border-top-right-radius:10px ;
+	border-top-left-radius:10px ;
+}
+
+
+/* ------------- tab-wide content -----------------*/
+.tabscontent {
+    text-align: left;
+    vertical-align: middle;
+	border: none;
+    background: #ffffff;
+	display: none;
+}
+
+.subheading h2{						/* common subheading format */
+	font-size: 25px;
+	font-family: helvetica;
+	text-align: center;
+	color: #002b5b;
+}
+
+img.hicon {
+	height:35px;
+	margin-bottom:-8px;
+}
+
+
+/* ---------------- biography --------------------- */
+div#biography{
+	font-size: 22px;
+	font-family: Lucida;
+	text-align: justify ;
+	padding-top:10px;
+	padding-left: 50px;
+	padding-right:50px;
+	padding-bottom: 10px;
+	margin-top:0px;
+}
+
+
+/* ---------------- news feeds --------------------- */
+div#newfeeds{
+	background-color: #eeeeee;
+	padding-top: 2px;
+	padding-bottom:20px; 
+	padding:25px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 280px;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+	display:none;
+}
+
+.card {
+	vertical-align: middle;
+    display: inline-block;
+	margin-left: 25px;
+	height: 240px;
+	width: 220px;
+	border-radius: 15px;
+	/* background-color: #def5e5; */
+	background-color: #fffbeb;
+	box-shadow: 4px 4px 5px #2e4f4f;
+	border: 2px solid #2e4f4f;
+}
+
+.card h2{
+	padding-top:10px;
+	font-size: 20px;
+	font-family: Lucida;
+	text-align: center;
+	margin: 0px;
+	color: #002b5b;
+}
+.card h3{
+	font-size: 20px;
+	font-family: Lucida;
+	text-align: center;
+	margin: 0px;
+	color: #002b5b;
+}
+
+.card p{
+	font-size: 16px;
+	font-family: lucida;
+	text-align: justify;
+	word-break:keep-all;
+    white-space: normal;
+	padding: 10px;
+	margin: 0px;
+	line-height: 1.2;
+}
+
+
+/* ------------- key publications ------------------ */
+div#Key-Publications {
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.keypublicationtiles {
+	display: inline-block;
+	width: 25%;
+	min-width: 420px;
+	height: auto;
+	margin: 10px;
+}
+
+.keypublicationtile {
+	vertical-align: middle;
+	border: 2px solid #002b5b;
+	box-shadow: 2px 2px 5px #002b5b;
+	border-radius: 10px;
+}
+
+img.key-pub-title {
+	padding-top: 4px;
+	width:95%;
+	aspect-ratio: 16/9;
+}
+
+div#key-pub-tile-caption p{
+	font-size: 14px;
+	/* font-size: 1.0vw; */
+	border-top:2px solid #316b80;
+}
+
+
+/* --------------- dataset -------------------- */
+div#dataset{
+	background-color: #eeeeee;
+	text-align: center;	
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.datasettiles {
+	display: inline-block;
+	width: 45%;
+	min-width: 320px;
+	max-width: 350px;
+	height: auto;
+	margin: 10px;
+}
+
+.datasettile {
+	background-color: #fffbeb;
+	vertical-align: middle;
+	border: 5px solid #0f3460;
+	box-shadow: 2px 2px 5px #647e78;
+	border-radius: 20px;
+}
+
+.datasettile h2 {
+	font-family: monospace;
+}
+
+
+/* ---------------- awards ------------------- */
+div#awards{
+	text-align: center;	
+	padding-bottom: 50px;
+}
+
+.awardtiles {
+	display: inline-block;
+	width: 22%;
+	min-width: 320px;
+	max-width: 400px;
+	height: auto;
+	margin: 10px;
+}
+
+.awardtile {
+	vertical-align: middle;
+}
+
+div#award-tile-caption{
+	border-top: 5px solid #002b5b;
+	border-bottom: 5px solid #002b5b;
+	padding: 5px;
+}
+
+img.award-title {
+	width:50%;
+	border-radius: 30px;
+	background-color: #eeeeee;
+	box-shadow: 2px 2px 5px #002b5b;
+	margin: 10px;
+}
+
+div#award-tile-caption h2{
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+div#award-tile-caption h3{
+	padding:0px;
+	margin:0px;
+	font-family: monospace;
+}
+
+
+/* ------------------ talks ------------------ */
+div#talks {
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.talktiles {
+	display: inline-block;
+	width: 25%;
+	min-width: 430px;
+	height: auto;
+	margin: 10px;
+}
+
+.talktile {
+	vertical-align: middle;
+}
+
+img.talk-title {
+	width:95%;
+	aspect-ratio: 16/9;
+	/* border: 2px solid #000; */
+	box-shadow: 2px 2px 5px #2e4f4f;
+}
+
+div#talk-tile-caption{
+	margin:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #fffbeb;
+	border-top: 4px solid #2e4f4f;
+	box-shadow: 2px 2px 5px #2e4f4f;	
+}
+
+/* --------------- academic services ---------------------- */
+div#academic-services{
+	text-align: center;
+}
+
+
+ /* -------------------- ChartJS graph ------------------------ */
+div#publication-charts{
+	text-align: center;	
+	padding: 50px;
+	background-color: #eeeeee;
+}
+
+.publication-chart {								/*  chartJS properties */
+	margin: 10px;
+	display: inline-block;
+	width: 42%;
+	height: 250px;
+}
+
+.publication-chart #conference_chart,
+.publication-chart #journal_chart
+ {
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;	
+}
+
+.canvasjs-chart-credit {
+	display: none !important;
+}
+
+
+ /* -------------------- Publication list ------------------------ */
+div#conf-journal-publication{
+	padding: 10px;
+	vertical-align: middle;
+}
+
+div#conf-journal-publication-list{
+	text-align: center;	
+	padding-bottom: 20px;
+	vertical-align: middle;
+}
+
+.publicationstiles {
+	margin: 5px;
+	display: inline-block;
+	width: 45%;
+	min-width: 660px;
+	max-width: 720px;
+	/* max-width: 400px; */
+	height: auto;
+	min-height: 220px;
+	vertical-align: middle;
+}
+
+.publicationstile {
+	background-color: #ffffff;
+	padding: 10px;
+	vertical-align: middle;
+	border: 2px solid #316b80; 
+	border-radius: 20px;
+	box-shadow: 4px 4px 5px #9ecce5;	
+}
+
+img.publications-img-tile{
+	width:260px; 
+	height:170px;
+	border: 2px solid #000	; 
+	box-shadow: 4px 4px 5px #9ecce5;
+}
+
+td.publications-caption {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td.publications-caption h3{
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+ /* -------------------- Book Publication list ------------------------ */
+div #book-publication{
+	padding: 10px;
+	background-color: #eeeeee;
+}
+
+div#book-publication-list{
+	text-align: center;	
+	padding-bottom: 20px;
+}
+
+div#resume-content{
+	text-align: center;
+}
+
+
+ /* -------------------- Robotics Project ------------------------ */
+div#Robotic-Projects{
+	text-align: center;
+	min-width: 800px;
+}
+
+
+ /* -------------------- BoaIV ------------------------ */
+div#BoaIV-2017 {
+	padding: 30px;
+}
+
+div#BoaIV-2017 p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin: 20px;
+	margin-top: 0px;
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div#BoaIV-video {
+	display: inline-block;
+	/* margin: 20px; */
+	min-width: 800px;
+	max-width: 1000px;
+	vertical-align: middle;
+}
+
+div#boaiv-design-product {
+	display: inline-block;
+	padding: 0px;
+	text-align: center;
+	max-width: 800px;
+}
+
+.boaiv-tiles {
+	display: inline-block;
+	width: 90%;
+	min-width: 320px;
+	max-width: 700px;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+.boaiv-tile {
+	vertical-align: middle;
+}
+
+img.boaiv-image{
+	/* width: 42%; */
+	/* min-width: 300px; */
+	max-width: 700px;
+	aspect-ratio: 16/9;
+	/* margin: 10px; */
+	border: 5px solid #000000;
+	border-radius: 10px;
+}
+
+
+div#boaiv-tile-caption{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+}
+ /* -------------------- techX ------------------------ */
+div#techXChallenge-2013 {
+	/* background-color: #ecf9ff; */
+	background-color: #eeeeee;
+	padding: 30px;
+}
+
+div#techxRobot {
+	display: inline-block;
+	margin: 20px;
+	min-width: 800px;
+	max-width: 1000px;
+}
+
+img.videogif{
+	width: 40%;
+	min-width: 300px;
+	max-width: 380px;
+	aspect-ratio: 16/9;
+	margin: 5px;
+	border: 5px solid #000000;
+	border-radius: 10px;
+}
+
+div#techXChallenge-2013 h1 { 						/* p for namecard */
+	font-size: 34px;
+}
+
+
+div#techXChallenge-2013 p { 						/* p for namecard */
+	font-family: helvetica;
+	font-size: 20px;
+	margin: 20px;
+	margin-top: 0px;
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	/* color: #e31515; */
+}
+
+div#techxspeccontribution h3{
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div#techxspeccontribution {
+	background-color: #a0c3d2;
+	/* min-width: 800px; */
+	max-width: 800px;
+	display: inline-block;
+	border-radius: 30px;
+}
+
+div#robot-env-contribution{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+td.TechXTable{
+	border-radius: 20px;
+	min-width: 300px;
+	max-width: 450px;
+	vertical-align: top;
+
+}
+
+td.TechXTable p{
+	text-align: left;
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+td.TechXTable ul{
+	text-align: justify;
+	font-family: helvetica;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+div#techx-simulations {
+	display: inline-block;
+	padding: 20px;
+	min-width: 800px;
+}
+
+.techx-simtiles {
+	display: inline-block;
+	width: 23%;
+	min-width: 320px;
+	height: auto;
+}
+
+.techx-simtile {
+	vertical-align: middle;
+}
+
+
+div#techx-sim-tile-caption{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#techx-sim-tile-caption h3{
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+/* -------- footer ----------------- */
+div#footer {
+	font-size: medium;
+	border-top: 2px solid #c0c0c0;
+	padding: 50px;
+	color: #c0c0c0;
+	text-align: center;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer h3 {
+	color: #002b5b;
+	font-family: lacida;
+}
+
+div#footer-text {
+	text-align: center;
+}
